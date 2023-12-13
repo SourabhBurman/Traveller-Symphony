@@ -2,7 +2,10 @@
 
 
 /* <!-- vishnu --> */
-
+.title-landing-page{
+    font-size:xx-large;
+    margin-bottom: 20%;
+}
 .card-container {
     display: inline-flex;
     margin: 10%;
@@ -105,6 +108,7 @@
     font-weight: bold;
     font-size: 24px;
     color: #333;
+    margin-left: 10%;
     margin-bottom: 10%;
     margin-top: 12%;
   }
@@ -112,12 +116,13 @@
   .navigation-icon {
     width: 32px;
     margin-bottom: 10%;
+    margin-left: 10%;
+
   }
   
   .destination-name {
     font-size: 1.2em;
     color: #777;
-  
     margin-bottom: 10%;
   }
   
