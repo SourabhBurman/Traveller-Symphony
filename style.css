@@ -239,3 +239,37 @@ body {
 /* <!-- utkarsh --> */
 
 /* <!-- nidhi --> */
+.footer{
+  width: 100%;
+  height: auto;
+  background-color:#3ea8ff;
+  /* text-align: center; */
+}
+.footer input{
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+}
+.footer>p{
+  font-weight: bolder;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+.trav::first-letter{
+  font-size: larger;
+  /* text-align: left; */
+}
+
+.sub{
+  width: 20%;
+  height: 80%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.email{
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+  padding: 10px;
+}
