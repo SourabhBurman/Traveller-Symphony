@@ -10,13 +10,18 @@ body {
 
 
 .title-landing-page{
-    font-size:x-large;
+    font-size:xx-large;
     margin-bottom: 20%;
 }
 
 .card-container {
     display: inline-flex;
     margin: 5%;
+  }
+
+  .destination-container {
+    display: inline-flex;
+    margin: 5px;
   }
   
   .column {
@@ -177,22 +182,20 @@ body {
   .button-container {
     text-align: center;
   }
-
-  /* Style for the "See More" button */
+/*  reuasable button    */
   .see-more-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #19a3ff; /* Blue color */
-    color: #ffffff; /* White text */
+    background-color: #19a3ff; 
+    color: #ffffff; 
     font-weight: bold;
     text-decoration: none;
     border-radius: 20px;
     transition: background-color 0.3s ease;
   }
 
-  /* Hover effect */
   .see-more-button:hover {
-    background-color: #2980b9; /* Slightly darker blue on hover */
+    background-color: #2980b9; /*  darke blue on hover */
   }
 
 
