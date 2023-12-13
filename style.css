@@ -59,7 +59,7 @@
     right: 16px;
     width: 24px;
     background-color: rgba(255, 255, 255, 0.8); /* 80% transparency */
-    padding: 3px;
+    padding: 8px;
     border-radius: 5px;
     transition: transform 0.2s ease-in-out;
 }
@@ -152,9 +152,10 @@
   .days {
     font-size: 1.0em;
     color: #777;
-    margin-top: 20%;
+    margin-top: 12%;
     text-align: left;
     margin-right: 55%;
+    margin-bottom: 10%;
   }
   
   
