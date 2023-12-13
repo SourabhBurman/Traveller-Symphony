@@ -84,7 +84,7 @@
   .card-description-bar {
     display: flex;
     justify-content: space-between;
-    padding: 16px; 
+    padding: 4px; 
     background-color: #fff;
     border-radius: 0 0 20px 20px;
   }
@@ -93,6 +93,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-left: 5%;
   }
   
   .destination-info {
@@ -106,7 +107,7 @@
   }
   
   .navigation-icon {
-    width: 20px;
+    width: 32px;
     margin-right: 5px;
   }
   
@@ -124,20 +125,26 @@
   .rating-container {
     font-weight: bold;
     font-size: 15px;
+    margin-right: 40%;
+    margin-top: 12%;
 }
 
 .rating-star {
     cursor: pointer;
+    margin-right: 3px;
     color: #ccc;
 }
 
 .rating-star.active {
-    color: #ff701d; 
+    color: #ff8a1d; 
 }
   
   .days {
     font-size: 0.9em;
     color: #777;
+    margin-right: 40px;
+    margin-top: 12%;
+
   }
   
   
