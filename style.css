@@ -121,10 +121,19 @@
     align-items: flex-end;
   }
   
-  .rating-stars {
-    color: #f39c12;
-    font-size: 1.2em;
-  }
+  .rating-container {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.rating-star {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.rating-star.active {
+    color: #ff701d; 
+}
   
   .days {
     font-size: 0.9em;
