@@ -1,0 +1,246 @@
+{
+    "destinations": [
+        {
+            "id": 1,
+            "country": "France",
+            "destination": "Paris",
+            "rating": 4.5,
+            "days": 7,
+            "image": "paris_image.jpg"
+          },
+          {
+            "id": 2,
+            "country": "Italy",
+            "destination": "Rome",
+            "rating": 4.8,
+            "days": 5,
+            "image": "rome_image.jpg"
+          },
+          {
+            "id": 3,
+            "country": "Japan",
+            "destination": "Tokyo",
+            "rating": 4.7,
+            "days": 10,
+            "image": "tokyo_image.jpg"
+          },
+          {
+            "id": 4,
+            "country": "USA",
+            "destination": "New York",
+            "rating": 4.6,
+            "days": 6,
+            "image": "new_york_image.jpg"
+          },        
+      
+      {
+        "id": 5,
+        "country": "Spain",
+        "destination": "Barcelona",
+        "rating": 4.4,
+        "days": 8,
+        "image": "barcelona_image.jpg"
+      },
+      {
+        "id": 6,
+        "country": "Australia",
+        "destination": "Sydney",
+        "rating": 4.9,
+        "days": 7,
+        "image": "sydney_image.jpg"
+      },
+      {
+        "id": 7,
+        "country": "Brazil",
+        "destination": "Rio de Janeiro",
+        "rating": 4.7,
+        "days": 9,
+        "image": "rio_de_janeiro_image.jpg"
+      },
+      {
+        "id": 8,
+        "country": "Canada",
+        "destination": "Vancouver",
+        "rating": 4.5,
+        "days": 5,
+        "image": "vancouver_image.jpg"
+      },
+      {
+        "id": 9,
+        "country": "South Africa",
+        "destination": "Cape Town",
+        "rating": 4.6,
+        "days": 10,
+        "image": "cape_town_image.jpg"
+      },
+      {
+        "id": 10,
+        "country": "China",
+        "destination": "Beijing",
+        "rating": 4.8,
+        "days": 6,
+        "image": "beijing_image.jpg"
+      },
+      {
+        "id": 11,
+        "country": "India",
+        "destination": "Mumbai",
+        "rating": 4.3,
+        "days": 8,
+        "image": "mumbai_image.jpg"
+      },
+      {
+        "id": 12,
+        "country": "Germany",
+        "destination": "Berlin",
+        "rating": 4.6,
+        "days": 7,
+        "image": "berlin_image.jpg"
+      },
+      {
+        "id": 13,
+        "country": "Argentina",
+        "destination": "Buenos Aires",
+        "rating": 4.7,
+        "days": 9,
+        "image": "buenos_aires_image.jpg"
+      },
+      {
+        "id": 14,
+        "country": "Netherlands",
+        "destination": "Amsterdam",
+        "rating": 4.5,
+        "days": 5,
+        "image": "amsterdam_image.jpg"
+      },
+      {
+        "id": 15,
+        "country": "Thailand",
+        "destination": "Bangkok",
+        "rating": 4.8,
+        "days": 10,
+        "image": "bangkok_image.jpg"
+      },
+      {
+        "id": 16,
+        "country": "Mexico",
+        "destination": "Mexico City",
+        "rating": 4.6,
+        "days": 6,
+        "image": "mexico_city_image.jpg"
+      },
+      {
+        "id": 17,
+        "country": "United Kingdom",
+        "destination": "London",
+        "rating": 4.9,
+        "days": 7,
+        "image": "london_image.jpg"
+      },
+      {
+        "id": 18,
+        "country": "South Korea",
+        "destination": "Seoul",
+        "rating": 4.7,
+        "days": 8,
+        "image": "seoul_image.jpg"
+      },
+      {
+        "id": 19,
+        "country": "Russia",
+        "destination": "Moscow",
+        "rating": 4.5,
+        "days": 9,
+        "image": "moscow_image.jpg"
+      },
+      {
+        "id": 20,
+        "country": "Switzerland",
+        "destination": "Zurich",
+        "rating": 4.6,
+        "days": 5,
+        "image": "zurich_image.jpg"
+      },
+      {
+        "id": 21,
+        "country": "Portugal",
+        "destination": "Lisbon",
+        "rating": 4.4,
+        "days": 10,
+        "image": "lisbon_image.jpg"
+      },
+      {
+        "id": 22,
+        "country": "Singapore",
+        "destination": "Singapore City",
+        "rating": 4.8,
+        "days": 6,
+        "image": "singapore_city_image.jpg"
+      },
+      {
+        "id": 23,
+        "country": "Egypt",
+        "destination": "Cairo",
+        "rating": 4.7,
+        "days": 8,
+        "image": "cairo_image.jpg"
+      },
+      {
+        "id": 24,
+        "country": "Peru",
+        "destination": "Lima",
+        "rating": 4.5,
+        "days": 7,
+        "image": "lima_image.jpg"
+      },
+      {
+        "id": 25,
+        "country": "Norway",
+        "destination": "Oslo",
+        "rating": 4.6,
+        "days": 9,
+        "image": "oslo_image.jpg"
+      },
+      {
+        "id": 26,
+        "country": "Czech Republic",
+        "destination": "Prague",
+        "rating": 4.7,
+        "days": 5,
+        "image": "prague_image.jpg"
+      },
+      {
+        "id": 27,
+        "country": "Morocco",
+        "destination": "Marrakech",
+        "rating": 4.5,
+        "days": 10,
+        "image": "marrakech_image.jpg"
+      },
+      {
+        "id": 28,
+        "country": "Austria",
+        "destination": "Vienna",
+        "rating": 4.8,
+        "days": 6,
+        "image": "vienna_image.jpg"
+      },
+      {
+        "id": 29,
+        "country": "Iceland",
+        "destination": "Reykjavik",
+        "rating": 4.6,
+        "days": 7,
+        "image": "reykjavik_image.jpg"
+      },
+      {
+        "id": 30,
+        "country": "Chile",
+        "destination": "Santiago",
+        "rating": 4.7,
+        "days": 8,
+        "image": "santiago_image.jpg"
+      }
+    ]
+  }
+  
