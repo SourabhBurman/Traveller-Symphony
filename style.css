@@ -3,6 +3,119 @@
 
 /* <!-- vishnu --> */
 
+.card-container {
+    display: inline-flex;
+    margin: 10%;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .destination-card {
+    margin: 1%;
+    background-color: #f5f5f5;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+  
+  
+    transition: background-color 0.3s, transform 0.3s;
+  
+    max-width: 100%;
+  }
+  
+  .destination-card:hover {
+    background-color: #e0e0e0; 
+    transform: translateY(-2px); 
+  }
+  
+  .destination-image {
+    position: relative;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+  }
+  
+  .destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .bookmark-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+  }
+  
+  .card-description-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px; 
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .left-description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .destination-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .country-name {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .navigation-icon {
+    width: 20px;
+    margin-right: 5px;
+  }
+  
+  .destination-name {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .right-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .rating-stars {
+    color: #f39c12;
+    font-size: 1.2em;
+  }
+  
+  .days {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  
+  .title-landing-page {
+    margin-bottom: 25%;
+    margin-top: 2%;
+  }
+
+
+  
 
 /* <!-- yogesh --> */
 
