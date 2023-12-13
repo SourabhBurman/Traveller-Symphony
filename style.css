@@ -135,7 +135,7 @@
   
   .rating-container {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 19px;
     margin-top: 12%;
 }
 
@@ -150,11 +150,11 @@
 }
   
   .days {
-    font-size: 0.9em;
+    font-size: 1.0em;
     color: #777;
     margin-top: 20%;
     text-align: left;
-    margin-right: 60%;
+    margin-right: 55%;
   }
   
   
