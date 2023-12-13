@@ -56,16 +56,30 @@
     right: 16px;
     width: 24px;
     background-color: rgba(255, 255, 255, 0.8); /* 80% transparency */
-    padding: 3px; 
+    padding: 3px;
     border-radius: 5px;
-  }
-  
-  .bookmark-icon img {
-    width: 80%; 
-    height: 80%; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.bookmark-icon:hover {
+    transform: scale(1.1); /* Small hover effect */
+}
+
+.bookmark-icon img {
+    width: 80%;
+    height: 80%;
     margin: 10%;
     border-radius: 0%;
-  }
+    transition: transform 0.2s ease-in-out;
+}
+
+.bookmark-icon img:hover {
+    transform: scale(1.2); /* Larger hover effect */
+}
+
+.bookmark-icon:active {
+    transform: scale(0.8); /* Pop effect on click */
+}
   
   .card-description-bar {
     display: flex;
