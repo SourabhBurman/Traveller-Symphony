@@ -2,13 +2,21 @@
 
 
 /* <!-- vishnu --> */
+body {
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .title-landing-page{
-    font-size:xx-large;
+    font-size:x-large;
     margin-bottom: 20%;
 }
+
 .card-container {
     display: inline-flex;
-    margin: 10%;
+    margin: 5%;
   }
   
   .column {
@@ -105,7 +113,7 @@
   }
   
   .country-name {
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 24px;
     color: #333;
     margin-left: 10%;
@@ -123,6 +131,7 @@
   .destination-name {
     font-size: 1.2em;
     color: #777;
+    font-weight: light;
     margin-bottom: 10%;
   }
   
@@ -151,6 +160,7 @@
   
   .days {
     font-size: 1.0em;
+    font-weight:lighter;
     color: #777;
     margin-top: 12%;
     text-align: left;
@@ -164,7 +174,26 @@
     margin-top: 2%;
   }
 
+  .button-container {
+    text-align: center;
+  }
 
+  /* Style for the "See More" button */
+  .see-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #19a3ff; /* Blue color */
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Hover effect */
+  .see-more-button:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+  }
 
 
 /* <!-- yogesh --> */
