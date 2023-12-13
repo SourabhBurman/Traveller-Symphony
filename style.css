@@ -1,5 +1,9 @@
-/* <!-- sourav --> */
+* {
+  margin: 0;
+  padding: 0;
+}
 
+/* <!-- sourav --> */
 
 /* <!-- vishnu --> */
 body {
@@ -198,11 +202,40 @@ body {
     background-color: #2980b9; /*  darke blue on hover */
   }
 
-
 /* <!-- yogesh --> */
 
+.headingU {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 300px;
+  margin-left: 50px;
+  margin-top: 25px;
+  display: flex;
+  gap: 4%;
+}
+
+.classu {
+  height: 290px;
+  width: 28%;
+  border: 1px solid rgb(55, 165, 255);
+  border-radius: 5%;
+}
+
+.photo {
+  margin: 10px auto;
+  height: 100px;
+  width: 100px;
+  border: 1px solid rgb(55, 165, 255);
+  border-radius: 50%;
+}
+
+.details {
+  margin: 30px auto;
+}
 
 /* <!-- utkarsh --> */
-
 
 /* <!-- nidhi --> */
