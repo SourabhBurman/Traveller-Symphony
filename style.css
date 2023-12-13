@@ -2,7 +2,52 @@
   margin: 0;
   padding: 0;
 }
+.frontNavbar {
+    background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.logo {
+    
+  }
 
+  /* Navigation links styles */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Profile and search icon styles */
+  .profile-icon,
+  .search-icon {
+    margin-left: 10px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Signup button styles */
+  .signup-btn {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 /* <!-- sourav --> */
 
 /* <!-- vishnu --> */
@@ -204,6 +249,7 @@ body {
 
 /* <!-- yogesh --> */
 
+/* <!-- yogesh --> */
 .headingU {
   text-align: center;
 }
@@ -231,6 +277,12 @@ body {
   border: 1px solid rgb(55, 165, 255);
   border-radius: 50%;
 }
+.container .photo:nth-child(1) {
+    background-image: url(https://media.istockphoto.com/id/1485546774/photo/bald-man-smiling-at-camera-standing-with-arms-crossed.jpg?s=1024x1024&w=is&k=20&c=zvw6qDmYHmIvvCbEn2ZUF0tdSbKPnEWRsVAzd9g4hCM=);
+    background-size: cover;
+    background-position: center;
+}
+
 
 .details {
   margin: 30px auto;
