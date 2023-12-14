@@ -308,7 +308,8 @@ body {
   width: 100%;
   height: auto;
   background-color:#3ea8ff;
-  /* text-align: center; */
+  text-align: center;
+  padding-bottom: 10%;
 }
 .footer input{
   text-align: center;
@@ -337,4 +338,40 @@ body {
   height: 40%;
   border-radius: 10px;
   padding: 10px;
+}
+.myAccount>p{
+ font-size:larger;
+ font-weight:200px;
+ 
+}
+.box{
+ gap:5%;
+ color: white;
+ text-align: center;
+ font-size: large;
+ /* row-gap:80%; */
+ /* column-gap: 20%; */
+ padding-left:10%;
+ padding-bottom:10%;
+}
+/* .trav{
+ gap:10%;
+ row-gap: 10%;
+} */
+
+.social{
+ /* display:grid; */
+ /* grid-template-rows: repeat(1px,4); */
+ padding:3%;
+ padding-left: 40%;
+ gap:10px;
+ display: flex;
+ flex-direction: row;
+}
+.social>p{
+  color: white;
+}
+.trav .location p,
+.trav .phone p {
+  margin-bottom: 10px; 
 }
