@@ -2,50 +2,206 @@
   margin: 0;
   padding: 0;
 }
-.frontNavbar {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  display: flex;
+.frontHeader {
+  height:100vh;
+  padding-top: 1%;
+  background-image: url(/public/david-marcu-78A265wPiO4-unsplashput.jpg);
+  background-position: center;
+  background-size: cover;
+  display:  flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  /* border:solid red; */
+  box-sizing: border-box;
 }
-.logo {
+.frontNavbar {
+    background-color : rgba(255, 255, 255, 0);
+    width:90%;
+      color: white;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: solid 0.5px;
+      /* /* top:700px; */
+      position:sticky;
 }
+  .nav-links {
+    width:60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
 
-/* Navigation links styles */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
+  .nav-links li {
+    margin: 0;
+  }
 
-.nav-links li {
-  margin: 0;
-}
+  .nav-links a {
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    padding-bottom:13px;
+  }
+  .nav-links a:hover{
+    border-bottom:solid 7px;
+    border-radius: 5px;
+  }
+  .profile-icon,
+  .search-icon {
+    margin-left: 10px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+  }
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-}
+  .signup-btn {
+    padding: 8px 16px;
+    background-color: #39a0ed;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  .socialSideBar{
+    width:50px;
+    height:200px;
+    /* border:solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+    z-index: 1;
+    top: 160px;
+    right:0px;
+    position: fixed;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgba(181, 185, 123, 0.854);
+  }
+  .socialSideBar i{
+    /* color: rgba(255, 255, 255, 0.518); */
+    font-size: 28px;
+  }
+  .headerBottomSection{
+    /* top:90%;
+    position: absolute; */
+    height: 130px;
+    width:100%;
+    /* border:solid; */
+    padding : 1.5% 0% 1.5% 10%;
+    display:flex;
+    justify-content: start;
+    background-color: rgba(132, 132, 132, 0.5);
+    box-sizing: border-box;
+  }
+  .headerBottomSection h5,p {
+    color:rgba(255, 242, 242, 0.824);
+  }
+  .post1image{
+    /* z-index: 1; */
+    width:170px;
+    height:95px;
+    background-image: url(/public/Trilha_Pedra_Bonita_-_Alexandre_Macieira-_Riotur-min.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .post2image{
+    /* z-index: 2; */
+    width:170px;
+    height:95px;
+    background-image: url(/public/photo-1542103749-8ef59b94f47e.avif);
+    background-position: center;
+    background-size: cover;
+  }
+   /* .post3image{
+    width:170px;
+    height:95px;
+    background-image: url(/public/perbedaan-backpacker-dan-traveller.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .post4image{
+    width:170px;
+    height:95px;
+    background-image: url(/public/changing-traveller-report_resource-centre-tile_es.jpg);
+    background-position: center;
+    background-size: cover;
+  }  */
+  .headerBottomSection>div{
+    width:40%;
+    display: flex;
+    gap:20px;
+    /* border:solid; */
+  }
 
-/* Profile and search icon styles */
-.profile-icon,
-.search-icon {
-  margin-left: 10px;
-  font-size: 1.2em;
-  color: white;
-  cursor: pointer;
+  .headerMidSection {
+    width:70%;
+    /* border:solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap:40px;
+  }
+  .bookingdetails{
+    border:solid;
+    width:100%;
+    padding:1%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #121030cc;
+  }
+  .bookingdetails input{
+    height:30px;
+    border-radius: 12px;
+    border:solid white 1px;
+    color:white;
+    background-color: #201f34cc;
+    padding:6px;
+    padding-left: 10px;
+  }
+  .bookingdetails select{
+    height:43px;
+    border-radius: 12px;
+    border:solid white 1px;
+    background-color: #201f34cc;
+    color:white;
+    padding-left:10px;
+  }
+#idfordestination{
+  width:22%;
 }
-
-/* Signup button styles */
-.signup-btn {
-  padding: 8px 16px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+#idfordate {
+  width:25%;
+}
+#idforadults{
+width:20%;
+}
+#idforsearchbar{
+  width:20%;
+}
+#idforsearchbar::placeholder{
+color:white;
+}
+.discountCountdown>h4{
+  margin-top:20px;
+}
+#seemorepost {
+  position :absolute;
+  bottom:50px;
+  right:100px;
+  z-index: 1;
+}
+#seebackpost{
+  position :absolute;
+  bottom:30px;
+  right:100px;
+  z-index: 1;
 }
 /* <!-- sourav --> */
 
@@ -337,12 +493,12 @@ body {
   border: 1px solid rgb(55, 165, 255);
   border-radius: 5%;
 }
-
-.
 /* <!-- utkarsh --> */
 
 /* <!-- nidhi --> */
-.footer {
+
+
+.footer{
   width: 100%;
   height: auto;
   background-color: #3ea8ff;
