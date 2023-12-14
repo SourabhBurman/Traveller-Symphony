@@ -14,6 +14,7 @@
       "country": "Italy",
       "destination": "Rome",
       "description": "The eternal city with a rich history, home to the Colosseum and Vatican City.",
+      
       "rating": 4.8,
       "days": 5,
       "image": "https://source.unsplash.com/featured/?rome"
