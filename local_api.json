@@ -269,6 +269,187 @@
       "rating": 4.7,
       "days": 8,
       "image": "https://source.unsplash.com/featured/?santiago"
-    }
-  ]
-}
+    },
+     {
+        "id": 31,
+        "country": "Greece",
+        "destination": "Athens",
+        "description": "The ancient city with historic landmarks, including the Acropolis, Parthenon, and rich mythology.",
+        "rating": 4.8,
+        "days": 7,
+        "image": "https://source.unsplash.com/featured/?athens"
+      },
+      {
+        "id": 32,
+        "country": "Ireland",
+        "destination": "Dublin",
+        "description": "The lively capital with historic castles, vibrant pubs, and a rich literary heritage.",
+        "rating": 4.7,
+        "days": 6,
+        "image": "https://source.unsplash.com/featured/?dublin"
+      },
+      {
+        "id": 33,
+        "country": "Vietnam",
+        "destination": "Hanoi",
+        "description": "The charming city with a blend of French colonial architecture, vibrant markets, and rich history.",
+        "rating": 4.6,
+        "days": 8,
+        "image": "https://source.unsplash.com/featured/?hanoi"
+      },
+      {
+        "id": 34,
+        "country": "Croatia",
+        "destination": "Dubrovnik",
+        "description": "The stunning coastal city with medieval architecture, ancient city walls, and crystal-clear waters.",
+        "rating": 4.9,
+        "days": 5,
+        "image": "https://source.unsplash.com/featured/?dubrovnik"
+      },
+      {
+        "id": 35,
+        "country": "Singapore",
+        "destination": "Sentosa Island",
+        "description": "A resort island with pristine beaches, theme parks, and a variety of entertainment options.",
+        "rating": 4.7,
+        "days": 9,
+        "image": "https://source.unsplash.com/featured/?sentosaisland"
+      },
+      {
+        "id": 36,
+        "country": "New Zealand",
+        "destination": "Queenstown",
+        "description": "The adventure capital with stunning landscapes, outdoor activities, and a laid-back atmosphere.",
+        "rating": 4.8,
+        "days": 7,
+        "image": "https://source.unsplash.com/featured/?queenstown"
+      },
+      {
+        "id": 37,
+        "country": "Turkey",
+        "destination": "Istanbul",
+        "description": "The transcontinental city with a rich history, featuring the Hagia Sophia, Blue Mosque, and vibrant markets.",
+        "rating": 4.5,
+        "days": 10,
+        "image": "https://source.unsplash.com/featured/?istanbul"
+      },
+      {
+        "id": 38,
+        "country": "Maldives",
+        "destination": "Malé",
+        "description": "The tropical paradise with white sandy beaches, crystal-clear waters, and overwater bungalows.",
+        "rating": 4.9,
+        "days": 5,
+        "image": "https://source.unsplash.com/featured/?maldives"
+      },
+      {
+        "id": 39,
+        "country": "Austria",
+        "destination": "Salzburg",
+        "description": "The charming city known for its baroque architecture, music heritage, and stunning alpine surroundings.",
+        "rating": 4.7,
+        "days": 9,
+        "image": "https://source.unsplash.com/featured/?salzburg"
+      },
+      {
+        "id": 40,
+        "country": "South Korea",
+        "destination": "Busan",
+        "description": "The bustling port city with beautiful beaches, hot springs, and a vibrant cultural scene.",
+        "rating": 4.6,
+        "days": 6,
+        "image": "https://source.unsplash.com/featured/?busan"
+      },
+      {
+        "id": 41,
+        "country": "Finland",
+        "destination": "Helsinki",
+        "description": "The vibrant capital with modern architecture, design culture, and a rich maritime history.",
+        "rating": 4.8,
+        "days": 8,
+        "image": "https://source.unsplash.com/featured/?helsinki"
+      },
+      {
+        "id": 42,
+        "country": "Philippines",
+        "destination": "Palawan",
+        "description": "The tropical paradise with stunning landscapes, crystal-clear lagoons, and rich marine life.",
+        "rating": 4.7,
+        "days": 7,
+        "image": "https://source.unsplash.com/featured/?palawan"
+      },
+      {
+        "id": 43,
+        "country": "Indonesia",
+        "destination": "Bali",
+        "description": "The popular island destination with beautiful beaches, lush rice terraces, and vibrant cultural scenes.",
+        "rating": 4.5,
+        "days": 10,
+        "image": "https://source.unsplash.com/featured/?bali"
+      },
+      {
+        "id": 44,
+        "country": "Switzerland",
+        "destination": "Lucerne",
+        "description": "The picturesque city surrounded by mountains and a serene lake, known for its medieval architecture.",
+        "rating": 4.9,
+        "days": 8,
+        "image": "https://source.unsplash.com/featured/?lucerne"
+      },
+      {
+        "id": 45,
+        "country": "Canada",
+        "destination": "Banff",
+        "description": "The stunning resort town in the Canadian Rockies, known for its turquoise lakes and snowy peaks.",
+        "rating": 4.7,
+        "days": 6,
+        "image": "https://source.unsplash.com/featured/?banff"
+      },
+      {
+        "id": 46,
+        "country": "Peru",
+        "destination": "Cusco",
+        "description": "The historic city with Inca ruins, Spanish colonial architecture, and a gateway to Machu Picchu.",
+        "rating": 4.8,
+        "days": 9,
+        "image": "https://source.unsplash.com/featured/?cusco"
+      },
+      {
+        "id": 47,
+        "country": "Japan",
+        "destination": "Osaka",
+        "description": "The culinary capital with vibrant street food, historic castles, and modern architecture.",
+        "rating": 4.6,
+        "days": 7,
+        "image": "https://source.unsplash.com/featured/?osaka"
+      },
+      {
+        "id": 48,
+        "country": "Morocco",
+        "destination": "Fez",
+        "description": "The ancient city with a UNESCO-listed medina, historic mosques, and vibrant souks.",
+        "rating": 4.5,
+        "days": 5,
+        "image": "https://source.unsplash.com/featured/?fez"
+      },
+      {
+        "id": 49,
+        "country": "Brazil",
+        "destination": "Salvador",
+        "description": "The vibrant city with a rich Afro-Brazilian culture, historic architecture, and lively music scenes.",
+        "rating": 4.7,
+        "days": 10,
+        "image": "https://source.unsplash.com/featured/?salvador"
+      },
+      {
+        "id": 50,
+        "country": "Netherlands",
+        "destination": "Utrecht",
+        "description": "The charming city with historic canals, medieval architecture, and a lively cultural scene.",
+        "rating": 4.8,
+        "days": 8,
+        "image": "https://source.unsplash.com/featured/?utrecht"
+      }
+    ]
+  }
+ 
