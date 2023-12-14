@@ -115,12 +115,12 @@ body {
   
   .bookmark-icon {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 24px;
+    top: 4%;
+    right: 6%; 
+    width: 30px;
     background-color: rgba(255, 255, 255, 0.8); /* 80% transparency */
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 7px;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -129,8 +129,8 @@ body {
 }
 
 .bookmark-icon img {
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 85%;
     margin: 10%;
     border-radius: 0%;
     transition: transform 0.2s ease-in-out;
