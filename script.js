@@ -1,4 +1,17 @@
 // <!-- sourav -->
+// let headerBottomSection = document.getElementsByClassName("headerBottomSection")[0];
+// let seemorepost = document.getElementById("seemorepost");
+// let seebackpost = document.getElementById("seebackpost");
+// let movevar = 0;
+// seemorepost.addEventListener('click',(e)=> {
+//     movevar-=200;
+// headerBottomSection.style.transform = `translate(${movevar}px)`;
+// })
+// seebackpost.addEventListener('click',(e)=> {
+//     movevar+=200;
+// headerBottomSection.style.transform = `translate(${movevar}px)`;
+// })
+
 
 
 // <!-- vishnu -->
