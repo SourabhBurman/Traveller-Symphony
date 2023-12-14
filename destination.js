@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     card.innerHTML = `
         <div class="destination-image">
-            <img src="./public/masandaran.jpg" alt="${destination.destination}" />
+            <img src="${destination.image}" alt="${destination.destination}" />
             <div class="bookmark-icon">
                 <img src="./public/494568.png" />
             </div>
