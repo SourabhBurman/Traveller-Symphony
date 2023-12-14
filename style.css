@@ -88,14 +88,16 @@ body {
     flex: 1;
     margin: 20px;
   }
+  /*////////////////////////////////// this is the single container used on destination.html but i cant seem to fit it as grid helppppppppp   //////////*/
 
-  .destination-container {
+  #destination-container {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(auto, 1fr);
     gap: 20px;
     margin: 20px;
   }
-  
+  /*////////////////////////////////// this is card used on destination.html    //////////*/
   .product-destination-card {
     margin: 10px;
     box-sizing: border-box; 
