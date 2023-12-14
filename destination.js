@@ -34,11 +34,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function createDestinationCard(destination) {
     const card = document.createElement('div');
-    card.classList.add('destination-card');
+    card.classList.add('product-destination-card');
 
     card.innerHTML = `
         <div class="destination-image">
-            <img src="${destination.image}" alt="${destination.destination}" />
+            <img src="./public/masandaran.jpg" alt="${destination.destination}" />
             <div class="bookmark-icon">
                 <img src="./public/494568.png" />
             </div>
