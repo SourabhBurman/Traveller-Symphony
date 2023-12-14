@@ -43,16 +43,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 <img src="./public/494568.png" />
             </div>
         </div>
-        <div class="card-description-bar">
+        <div class="product-card-description-bar">
             <div class="left-description">
                 <h3 class="country-name">${destination.destination}</h3>
                 <div class="destination-info">
-                    <img class="navigation-icon" src="./public/location-icon.jpg" alt="Navigation Icon">
                     <span class="destination-name">${destination.country}</span>
                 </div>
             </div>
             <div class="right-description">
-                <div class="rating-container">${destination.rating}&nbsp;</div>
+                <div class="rating-container">${destination.rating}
+                <span class="rating-star active">★</span>
+                </div>
                 <span class="days">${destination.days} days</span>
             </div>
         </div>
