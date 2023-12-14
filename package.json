@@ -1,0 +1,19 @@
+{
+  "name": "code-symphony-4398",
+  "version": "1.0.0",
+  "description": "travel website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SourabhBurman/code-symphony-4398.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SourabhBurman/code-symphony-4398/issues"
+  },
+  "homepage": "https://github.com/SourabhBurman/code-symphony-4398#readme"
+}
