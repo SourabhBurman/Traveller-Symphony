@@ -53,8 +53,6 @@ function fetchTravelDestinations() {
         });
 }
 
-    
-
 // <!-- yogesh -->
 
 
