@@ -1,8 +1,8 @@
+const destinationContainer = document.getElementById('destination-container');
+
 document.addEventListener('DOMContentLoaded', function () {
     fetchDestinations()
       .then(destinations => {
-        const destinationContainer = document.getElementById('destination-container');
-
         destinations.forEach(destination => {
           const destinationCard = createDestinationCard(destination);
           destinationContainer.appendChild(destinationCard);
