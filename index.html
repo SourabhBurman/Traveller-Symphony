@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Code-Symphony-4398</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code-Symphony-4398</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
   </head>
 
 <body>
@@ -42,343 +51,437 @@
         </li>
         <li><a href="/signup/sign-in.html"><button id="signup" class="signup-btn">Sign Up</button></a></li>
       </ul>
-    </div>
+   
+      </div>
 
-    <div class="headerMidSection">
-      <h2 style="color:white; font-size:40px;">FEEL THE REAL BEAUTY OF NATURE</h2>
-      <div class="bookingdetails">
-        <select name="DestinationHeader" id="idfordestination">
-          <option value="Destination">Destination</option>
-          <option value="Italy">Italy</option>
-          <option value="Scotland">Scotland</option>
-          <option value="Vanice">Vanice</option>
-          <option value="India">India</option>
-          <option value="India">Other</option>
-        </select>
-        <input type="date" name="Check-in" id="idfordate">
-        <select name="Adults" id="idforadults">
-          <option value="Adults">Adults</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3+">3 or more</option>
-        </select>
-        <input type="text" name="" id="idforsearchbar" placeholder="Search">
+      <div class="headerMidSection">
+        <h2 style="color: white; font-size: 40px">
+          FEEL THE REAL BEAUTY OF NATURE
+        </h2>
+        <div class="bookingdetails">
+          <select name="DestinationHeader" id="idfordestination">
+            <option value="Destination">Destination</option>
+            <option value="Italy">Italy</option>
+            <option value="Scotland">Scotland</option>
+            <option value="Vanice">Vanice</option>
+            <option value="India">India</option>
+            <option value="India">Other</option>
+          </select>
+          <input type="date" name="Check-in" id="idfordate" />
+          <select name="Adults" id="idforadults">
+            <option value="Adults">Adults</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3+">3 or more</option>
+          </select>
+          <input type="text" name="" id="idforsearchbar" placeholder="Search" />
+        </div>
+        <div class="discountCountdown">
+          <h3 style="color: rgba(255, 255, 255, 0.795)">
+            Discount on new bookings
+          </h3>
+          <h4
+            id="discounttimeleft"
+            style="text-align: center; color: rgba(255, 255, 255, 0.509)"
+          >
+            3<span style="font-size: smaller; font-weight: 400">hrs</span>
+            32<span style="font-size: smaller; font-weight: 400">Min</span>
+            07<span style="font-size: smaller; font-weight: 400">Sec</span>
+          </h4>
+        </div>
       </div>
-      <div class="discountCountdown">
-        <h3 style="color: rgba(255, 255, 255, 0.795);">Discount on new bookings</h3>
-        <h4 id="discounttimeleft" style="text-align: center; color: rgba(255, 255, 255, 0.509);">3<span
-          style="font-size: smaller; font-weight: 400;">hrs</span> 32<span
-          style="font-size: smaller; font-weight: 400;">Min</span> 07<span
-          style="font-size: smaller; font-weight: 400;">Sec</span></h4>
+      <!-- <div class="blurbottom"></div> -->
+      <div class="headerBottomSection">
+        <div class="headerbottompost1">
+          <div class="post1image"></div>
+          <div class="post1text">
+            <h5>HUNDREDS OF GUIDES</h5>
+            <p style="font-size: small">
+              New High-Quality Guides Added Each week
+            </p>
+          </div>
+        </div>
+        <div class="headerbottompost2">
+          <div class="post2image"></div>
+          <div class="post2text">
+            <h5>LOCAL EXPERTS</h5>
+            <p style="font-size: small">
+              The largest network of local guides worldwide
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- <div class="blurbottom"></div> -->
-    <div class="headerBottomSection">
-      <div class="headerbottompost1">
-        <div class="post1image"></div>
-        <div class="post1text">
-          <h5>HUNDREDS OF GUIDES</h5>
-          <p style="font-size: small;">New High-Quality Guides Added Each week</p>
+    <!-- vishnu -->
+    <div id="card-container" class="card-container">
+      <div class="column column1">
+        <div class="uniquerow" style="height: 150px">
+          <div class="title-landing-page">
+            <h1>Popular places to visit</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="destination-card">
+            <div class="destination-image">
+              <img src="./public/masandaran.jpg" />
+              <div class="bookmark-icon">
+                <img src="./public/494568.png" />
+              </div>
+            </div>
+            <div class="card-description-bar">
+              <div class="left-description">
+                <h3 class="country-name">Italy</h3>
+                <div class="destination-info">
+                  <img
+                    class="navigation-icon"
+                    src="./public/location-icon.jpg"
+                    alt="Navigation Icon"
+                  />
+                  <span class="destination-name"> Mazandaran</span>
+                </div>
+              </div>
+              <div class="right-description">
+                <div class="rating-container" id="rating-container">
+                  4.5&nbsp;
+                </div>
+                <span class="days">1 day </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="headerbottompost2">
-        <div class="post2image"></div>
-        <div class="post2text">
-          <h5>LOCAL EXPERTS</h5>
-          <p style="font-size: small;">The largest network of local guides worldwide</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- vishnu -->
-  <div id="card-container" class="card-container">
-    <div class="column column1">
-      <div class="uniquerow" style=" height:150px">
-        <div class="title-landing-page">
-          <h1>Popular places to visit</h1>
-        </div>
-      </div>
-      <div class="row">
+
+      <div class="column column2">
         <div class="destination-card">
           <div class="destination-image">
-            <img src="./public/masandaran.jpg" />
+            <img src="./public/mountperu.jpg" />
             <div class="bookmark-icon">
               <img src="./public/494568.png" />
             </div>
           </div>
           <div class="card-description-bar">
             <div class="left-description">
-              <h3 class="country-name">Italy</h3>
+              <h3 class="country-name">Scottland</h3>
               <div class="destination-info">
-                <img class="navigation-icon" src="./public/location-icon.jpg" alt="Navigation Icon" />
-                <span class="destination-name"> Mazandaran</span>
+                <img
+                  class="navigation-icon"
+                  src="./public/location-icon.jpg"
+                  alt="Navigation Icon"
+                />
+                <span class="destination-name"> peterland</span>
               </div>
             </div>
             <div class="right-description">
               <div class="rating-container" id="rating-container">
-                4.5&nbsp;
+                4.0&nbsp;
               </div>
-              <span class="days">1 day </span>
+              <span class="days">3 days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column column3">
+        <div class="row">
+          <div class="destination-card">
+            <div class="destination-image">
+              <img src="./public/womenonriverside.webp" />
+              <div class="bookmark-icon">
+                <img src="./public/494568.png" />
+              </div>
+            </div>
+            <div class="card-description-bar">
+              <div class="left-description">
+                <p class="country-name">India</p>
+                <div class="destination-info">
+                  <img
+                    class="navigation-icon"
+                    src="./public/location-icon.jpg"
+                    alt="Navigation Icon"
+                  />
+                  <span class="destination-name"> Mizoram</span>
+                </div>
+              </div>
+              <div class="right-description">
+                <div class="rating-container" id="rating-container">
+                  4.5&nbsp;
+                </div>
+                <span class="days">5 days</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="destination-card">
+            <div class="destination-image">
+              <img src="./public/venice.jpg" />
+              <div class="bookmark-icon">
+                <img src="./public/494568.png" />
+              </div>
+            </div>
+            <div class="card-description-bar">
+              <div class="left-description">
+                <h3 class="country-name">Venice</h3>
+                <div class="destination-info">
+                  <img
+                    class="navigation-icon"
+                    src="./public/location-icon.jpg"
+                    alt="Navigation Icon"
+                  />
+                  <span class="destination-name"> Marcoh</span>
+                </div>
+              </div>
+              <div class="right-description">
+                <div class="rating-container" id="rating-container">
+                  5.0&nbsp;
+                </div>
+                <span class="days">2 days</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="column column2">
-      <div class="destination-card">
-        <div class="destination-image">
-          <img src="./public/mountperu.jpg" />
-          <div class="bookmark-icon">
-            <img src="./public/494568.png" />
-          </div>
-        </div>
-        <div class="card-description-bar">
-          <div class="left-description">
-            <h3 class="country-name">Scottland</h3>
-            <div class="destination-info">
-              <img class="navigation-icon" src="./public/location-icon.jpg" alt="Navigation Icon" />
-              <span class="destination-name"> peterland</span>
-            </div>
-          </div>
-          <div class="right-description">
-            <div class="rating-container" id="rating-container">
-              4.0&nbsp;
-            </div>
-            <span class="days">3 days</span>
-          </div>
-        </div>
-      </div>
+    <div class="button-container">
+      <a href="destination.html" class="see-more-button">See More ></a>
     </div>
 
-    <div class="column column3">
-      <div class="row">
-        <div class="destination-card">
-          <div class="destination-image">
-            <img src="./public/womenonriverside.webp" />
-            <div class="bookmark-icon">
-              <img src="./public/494568.png" />
-            </div>
-          </div>
-          <div class="card-description-bar">
-            <div class="left-description">
-              <p class="country-name">India</p>
-              <div class="destination-info">
-                <img class="navigation-icon" src="./public/location-icon.jpg" alt="Navigation Icon" />
-                <span class="destination-name"> Mizoram</span>
-              </div>
-            </div>
-            <div class="right-description">
-              <div class="rating-container" id="rating-container">
-                4.5&nbsp;
-              </div>
-              <span class="days">5 days</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="destination-card">
-          <div class="destination-image">
-            <img src="./public/venice.jpg" />
-            <div class="bookmark-icon">
-              <img src="./public/494568.png" />
-            </div>
-          </div>
-          <div class="card-description-bar">
-            <div class="left-description">
-              <h3 class="country-name">Venice</h3>
-              <div class="destination-info">
-                <img class="navigation-icon" src="./public/location-icon.jpg" alt="Navigation Icon" />
-                <span class="destination-name"> Marcoh</span>
-              </div>
-            </div>
-            <div class="right-description">
-              <div class="rating-container" id="rating-container">
-                5.0&nbsp;
-              </div>
-              <span class="days">2 days</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="button-container">
-    <a href="destination.html" class="see-more-button">See More ></a>
-  </div>
-
-  <!-- yogesh -->
-  <div class="summerspecial">
-    <div class="leftsummer"></div>
-    <div class="rightsummer">
+    <!-- yogesh -->
+    <div class="summerspecial">
+      <div class="leftsummer"></div>
+      <div class="rightsummer">
         <h4>Summer Special</h4>
         <h2>UPTO 25% OFF</h2>
         <h4>Spend the best vacation with us</h4>
         <h3>THE NIGHTS OF THIALAND</h3>
         <button class="booknowbuttonsummer">BOOK NOW</button>
-    </div>
-</div>
-
-<!-- caraousel -->
-<h2 style="text-align:center; margin-top:60px;">Perfect Holiday Plan</h2>
-<div id="caraouselcontainer"></div>
-<button id="caraouselbutton">see more</button>
-
-  <!-- /utkarsh -->
-
-  <h1 class="headingU">Testimonials</h1>
-  <div class="container">
-    <div class="classu class1">
-      <div class="photo">
-        <!-- <img src="" alt="profile" /> -->
-      </div>
-      <div class="details">
-        <p  style="color:black">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-          exercitationem nulla aut incidunt et quaerat consectetur mollitia
-          iure, aperiam repellat ad omnis delectus tempora quae! Esse placeat
-          deleniti quisquam sint.
-        </p>
       </div>
     </div>
-    <div class="classu class2">
-      <div class="photo">
-        <!-- <img src="" alt="profile" /> -->
-      </div>
-      <div class="details">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum,
-        aperiam fuga ex amet voluptate eligendi nostrum magnam delectus labore
-        dolorem officia harum possimus quisquam sed nemo officiis. Dolore,
-        reprehenderit?
-      </div>
-    </div>
-    <div class="classu class3">
-      <div class="photo"></div>
-      <div class="details">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur,
-        voluptates illo omnis amet laborum quod unde voluptatibus quidem eius,
-        fugit quia sit cum nulla sequi explicabo nihil perspiciatis sed.
-        Velit.
-      </div>
-    </div>
-  </div>
-  <div class="recent">
-    <h1 style="margin: 10px; text-align: center">Our Recent Activities</h1>
-    <div class="container2">
-      <div class="childu child1">
-        <img src="" alt="photo" />
-        <h3>Last Summer Memories</h3>
-      </div>
-      <div class="childu child2">
-        <img src="" alt="photo" />
-        <h3>Road trips with friends</h3>
-      </div>
-      <div class="childu child3">
-        <img src="" alt="photo" />
-        <h3>Solo Trips</h3>
-      </div>
-    </div>
-  </div>
 
-  <!-- utkarsh -->
+    <!-- caraousel -->
+    <h2 style="text-align: center; margin-top: 60px">Perfect Holiday Plan</h2>
+    <div id="caraouselcontainer"></div>
+    <button id="caraouselbutton">see more</button>
 
-  <!-- nidhi -->
-  <div class="footer">
-    <p class="subscribe">Subscribe Our Newsletter</p>
-    <input type="email" placeholder="Enter your Email id" class="email" />
-    <input type="text" placeholder="Subscribe" class="sub" />
+    <!-- /utkarsh -->
 
-    <div class="box" style="display: flex">
-      <!-- TRAVELLER -->
-      <div class="Traveller">
-        <h2 class="trav">TRAVELLER</h2>
-        <div class="location" style="display: flex">
-          <span class="material-symbols-outlined"> location_on </span>
-          <p>
-            Lakshmipuram road, Guntur <br />
-            <span>Andhra Pradesh, India.</span>
+    <h1 class="headingU">Testimonials</h1>
+    <div class="container">
+      <div class="classu class1">
+        <div class="photo">
+          <!-- <img src="" alt="profile" /> -->
+        </div>
+        <div class="details">
+          <p style="color: black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            exercitationem nulla aut incidunt et quaerat consectetur mollitia
+            iure, aperiam repellat ad omnis delectus tempora quae! Esse placeat
+            deleniti quisquam sint.
           </p>
         </div>
-        <div class="phone" style="display: flex; margin-bottom: 10px">
-          <span class="material-symbols-outlined"> call </span>
-          <p>0863 - 222000</p>
+      </div>
+      <div class="classu class2">
+        <div class="photo">
+          <!-- <img src="" alt="profile" /> -->
         </div>
-        <div class="email" style="display: flex">
-          <span class="material-symbols-outlined"> mail </span>
-          <p>Yourmailid@gmail.com</p>
+        <div class="details">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum,
+          aperiam fuga ex amet voluptate eligendi nostrum magnam delectus labore
+          dolorem officia harum possimus quisquam sed nemo officiis. Dolore,
+          reprehenderit?
         </div>
       </div>
-      <!-- MYACCOUNT -->
-      <div class="myAccount">
-        <h2>MY ACCOUNT</h2>
-        <!-- <ul>
+      <div class="classu class3">
+        <div class="photo"></div>
+        <div class="details">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur,
+          voluptates illo omnis amet laborum quod unde voluptatibus quidem eius,
+          fugit quia sit cum nulla sequi explicabo nihil perspiciatis sed.
+          Velit.
+        </div>
+      </div>
+    </div>
+    <div class="recent">
+      <h1 style="margin: 10px; text-align: center">Our Recent Activities</h1>
+      <div class="container2">
+        <div class="childu child1">
+          <img src="" alt="photo" />
+          <h3>Last Summer Memories</h3>
+        </div>
+        <div class="childu child2">
+          <img src="" alt="photo" />
+          <h3>Road trips with friends</h3>
+        </div>
+        <div class="childu child3">
+          <img src="" alt="photo" />
+          <h3>Solo Trips</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores alias
+      dolore est hic praesentium! Iusto labore et, illo suscipit error, vel,
+      maiores vitae cupiditate fuga nihil in. Eos, incidunt minus.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores alias
+      dolore est hic praesentium! Iusto labore et, illo suscipit error, vel,
+      maiores vitae cupiditate fuga nihil in. Eos, incidunt minus.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores alias
+      dolore est hic praesentium! Iusto labore et, illo suscipit error, vel,
+      maiores vitae cupiditate fuga nihil in. Eos, incidunt minus.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores alias
+      dolore est hic praesentium! Iusto labore et, illo suscipit error, vel,
+      maiores vitae cupiditate fuga nihil in. Eos, incidunt minus.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores alias
+      dolore est hic praesentium! Iusto labore et, illo suscipit error, vel,
+      maiores vitae cupiditate fuga nihil in. Eos, incidunt minus.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores alias
+      dolore est hic praesentium! Iusto labore et, illo suscipit error, vel,
+      maiores vitae cupiditate fuga nihil in. Eos, incidunt minus.
+    </p> -->
+
+    <!-- utkarsh -->
+
+    <!-- nidhi -->
+    <div class="footer">
+      <p class="subscribe">Subscribe Our Newsletter</p>
+      <input type="email" placeholder="Enter your Email id" class="email" />
+      <input type="text" placeholder="Subscribe" class="sub" />
+
+      <div class="box" style="display: flex">
+        <!-- TRAVELLER -->
+        <div class="Traveller">
+          <h2 class="trav">TRAVELLER</h2>
+          <div class="location" style="display: flex">
+            <span class="material-symbols-outlined"> location_on </span>
+            <p>
+              Lakshmipuram road, Guntur <br />
+              <span>Andhra Pradesh, India.</span>
+            </p>
+          </div>
+          <div class="phone" style="display: flex; margin-bottom: 10px">
+            <span class="material-symbols-outlined"> call </span>
+            <p>0863 - 222000</p>
+          </div>
+          <div class="email" style="display: flex">
+            <span class="material-symbols-outlined"> mail </span>
+            <p>Yourmailid@gmail.com</p>
+          </div>
+        </div>
+        <!-- MYACCOUNT -->
+        <div class="myAccount">
+          <h2>MY ACCOUNT</h2>
+          <!-- <ul>
                 <li>Search Items</li>
                 <li>Advanced serach</li>
                 <li>Orders & Returns</li>
                 <li>Helps & FAQ</li>
                 <li>Store Location</li>
             </ul> -->
-        <p>Search Items</p>
-        <p>Advanced serach</p>
-        <p>Orders & Returns</p>
-        <p>Helps & FAQ</p>
-        <p>Store Locations</p>
-      </div>
+          <p>Search Items</p>
+          <p>Advanced serach</p>
+          <p>Orders & Returns</p>
+          <p>Helps & FAQ</p>
+          <p>Store Locations</p>
+        </div>
 
-      <!-- INFORMATION -->
-      <div class="info">
-        <h2>INFORMATION</h2>
-        <p>News</p>
-        <p>FAQ</p>
-        <p>Refunds & Returns</p>
-        <p>Delivery</p>
-        <p>
-          Privacy Policy & <br />
-          Terms & Conditions
-        </p>
-      </div>
+        <!-- INFORMATION -->
+        <div class="info">
+          <h2>INFORMATION</h2>
+          <p>News</p>
+          <p>FAQ</p>
+          <p>Refunds & Returns</p>
+          <p>Delivery</p>
+          <p>
+            Privacy Policy & <br />
+            Terms & Conditions
+          </p>
+        </div>
 
-      <div class="info2">
-        <h2>INFORMATION</h2>
-        <p>Rock climbing Gears</p>
-        <p>Solar Powered helmet</p>
-        <p>pull Rope Rubber</p>
-        <p>Pairing knife</p>
-        <p>Ladder Golf</p>
+        <div class="info2">
+          <h2>INFORMATION</h2>
+          <p>Rock climbing Gears</p>
+          <p>Solar Powered helmet</p>
+          <p>pull Rope Rubber</p>
+          <p>Pairing knife</p>
+          <p>Ladder Golf</p>
+        </div>
+      </div>
+      <hr />
+      <div class="social">
+        <p>FOLLOW US ON</p>
+        <a href="https://www.facebook.com/"
+          ><svg
+            width="9"
+            height="18"
+            viewBox="0 0 9 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Path"
+              opacity="0.31829"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2.25 6H0V9H2.25V18H6V9H8.7315L9 6H6V4.74975C6 4.0335 6.144 3.75 6.83625 3.75H9V0H6.144C3.447 0 2.25 1.18725 2.25 3.46125V6Z"
+              fill="black"
+            />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/"
+          ><svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Shape"
+              opacity="0.31829"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9 0C6.55575 0 6.24975 0.0105 5.28975 0.054C2.02125 0.204 0.20475 2.0175 0.05475 5.289C0.0105 6.24975 0 6.55575 0 9C0 11.4443 0.0105 11.751 0.054 12.711C0.204 15.9795 2.0175 17.796 5.289 17.946C6.24975 17.9895 6.55575 18 9 18C11.4443 18 11.751 17.9895 12.711 17.946C15.9765 17.796 17.7975 15.9825 17.9452 12.711C17.9895 11.751 18 11.4443 18 9C18 6.55575 17.9895 6.24975 17.946 5.28975C17.799 2.02425 15.9832 0.20475 12.7118 0.05475C11.751 0.0105 11.4443 0 9 0ZM9 1.62225C11.403 1.62225 11.688 1.63125 12.6375 1.67475C15.0765 1.78575 16.2157 2.943 16.3267 5.364C16.3703 6.31275 16.3785 6.59775 16.3785 9.00075C16.3785 11.4045 16.3695 11.6888 16.3267 12.6375C16.215 15.0563 15.0787 16.2157 12.6375 16.3267C11.688 16.3703 11.4045 16.3792 9 16.3792C6.597 16.3792 6.312 16.3703 5.36325 16.3267C2.91825 16.215 1.785 15.0525 1.674 12.6367C1.6305 11.688 1.6215 11.4037 1.6215 9C1.6215 6.597 1.63125 6.31275 1.674 5.36325C1.78575 2.943 2.922 1.785 5.36325 1.674C6.31275 1.63125 6.597 1.62225 9 1.62225ZM4.3785 9C4.3785 6.44775 6.44775 4.3785 9 4.3785C11.5522 4.3785 13.6215 6.44775 13.6215 9C13.6215 11.553 11.5522 13.6222 9 13.6222C6.44775 13.6222 4.3785 11.5522 4.3785 9ZM9 12C7.34325 12 6 10.6575 6 9C6 7.34325 7.34325 6 9 6C10.6567 6 12 7.34325 12 9C12 10.6575 10.6567 12 9 12ZM12.7238 4.19625C12.7238 3.6 13.2075 3.11625 13.8045 3.11625C14.4008 3.11625 14.8837 3.6 14.8837 4.19625C14.8837 4.7925 14.4008 5.27625 13.8045 5.27625C13.2075 5.27625 12.7238 4.7925 12.7238 4.19625Z"
+              fill="black"
+            />
+          </svg>
+        </a>
+        <a href="https://twitter.com/">
+          <svg
+            width="18"
+            height="15"
+            viewBox="0 0 18 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Path"
+              opacity="0.31829"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M18 1.77579C17.3377 2.07727 16.626 2.2803 15.879 2.37182C16.6418 1.90346 17.2275 1.1613 17.5028 0.276866C16.7895 0.710624 15.999 1.02594 15.1575 1.19591C14.4848 0.459906 13.524 0 12.462 0C10.0778 0 8.32575 2.28107 8.86425 4.64905C5.796 4.49139 3.075 2.984 1.25325 0.692935C0.28575 2.39489 0.7515 4.62136 2.3955 5.74882C1.791 5.72883 1.221 5.55886 0.72375 5.27507C0.68325 7.02933 1.9095 8.67053 3.6855 9.03584C3.16575 9.18042 2.5965 9.21426 2.0175 9.10044C2.487 10.6047 3.8505 11.6991 5.4675 11.7299C3.915 12.9781 1.959 13.5357 0 13.2988C1.63425 14.3732 3.576 15 5.661 15C12.5175 15 16.3912 9.06199 16.1572 3.73616C16.8787 3.20165 17.505 2.53486 18 1.77579Z"
+              fill="black"
+            />
+          </svg>
+        </a>
       </div>
     </div>
-    <hr />
-    <div class="social">
-      <p>FOLLOW US ON</p>
-      <a href="https://www.facebook.com/"><svg width="9" height="18" viewBox="0 0 9 18" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path id="Path" opacity="0.31829" fill-rule="evenodd" clip-rule="evenodd"
-            d="M2.25 6H0V9H2.25V18H6V9H8.7315L9 6H6V4.74975C6 4.0335 6.144 3.75 6.83625 3.75H9V0H6.144C3.447 0 2.25 1.18725 2.25 3.46125V6Z"
-            fill="black" />
-        </svg>
-      </a>
-      <a href="https://www.instagram.com/"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path id="Shape" opacity="0.31829" fill-rule="evenodd" clip-rule="evenodd"
-            d="M9 0C6.55575 0 6.24975 0.0105 5.28975 0.054C2.02125 0.204 0.20475 2.0175 0.05475 5.289C0.0105 6.24975 0 6.55575 0 9C0 11.4443 0.0105 11.751 0.054 12.711C0.204 15.9795 2.0175 17.796 5.289 17.946C6.24975 17.9895 6.55575 18 9 18C11.4443 18 11.751 17.9895 12.711 17.946C15.9765 17.796 17.7975 15.9825 17.9452 12.711C17.9895 11.751 18 11.4443 18 9C18 6.55575 17.9895 6.24975 17.946 5.28975C17.799 2.02425 15.9832 0.20475 12.7118 0.05475C11.751 0.0105 11.4443 0 9 0ZM9 1.62225C11.403 1.62225 11.688 1.63125 12.6375 1.67475C15.0765 1.78575 16.2157 2.943 16.3267 5.364C16.3703 6.31275 16.3785 6.59775 16.3785 9.00075C16.3785 11.4045 16.3695 11.6888 16.3267 12.6375C16.215 15.0563 15.0787 16.2157 12.6375 16.3267C11.688 16.3703 11.4045 16.3792 9 16.3792C6.597 16.3792 6.312 16.3703 5.36325 16.3267C2.91825 16.215 1.785 15.0525 1.674 12.6367C1.6305 11.688 1.6215 11.4037 1.6215 9C1.6215 6.597 1.63125 6.31275 1.674 5.36325C1.78575 2.943 2.922 1.785 5.36325 1.674C6.31275 1.63125 6.597 1.62225 9 1.62225ZM4.3785 9C4.3785 6.44775 6.44775 4.3785 9 4.3785C11.5522 4.3785 13.6215 6.44775 13.6215 9C13.6215 11.553 11.5522 13.6222 9 13.6222C6.44775 13.6222 4.3785 11.5522 4.3785 9ZM9 12C7.34325 12 6 10.6575 6 9C6 7.34325 7.34325 6 9 6C10.6567 6 12 7.34325 12 9C12 10.6575 10.6567 12 9 12ZM12.7238 4.19625C12.7238 3.6 13.2075 3.11625 13.8045 3.11625C14.4008 3.11625 14.8837 3.6 14.8837 4.19625C14.8837 4.7925 14.4008 5.27625 13.8045 5.27625C13.2075 5.27625 12.7238 4.7925 12.7238 4.19625Z"
-            fill="black" />
-        </svg>
-      </a>
-      <a href="https://twitter.com/">
-        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path id="Path" opacity="0.31829" fill-rule="evenodd" clip-rule="evenodd"
-            d="M18 1.77579C17.3377 2.07727 16.626 2.2803 15.879 2.37182C16.6418 1.90346 17.2275 1.1613 17.5028 0.276866C16.7895 0.710624 15.999 1.02594 15.1575 1.19591C14.4848 0.459906 13.524 0 12.462 0C10.0778 0 8.32575 2.28107 8.86425 4.64905C5.796 4.49139 3.075 2.984 1.25325 0.692935C0.28575 2.39489 0.7515 4.62136 2.3955 5.74882C1.791 5.72883 1.221 5.55886 0.72375 5.27507C0.68325 7.02933 1.9095 8.67053 3.6855 9.03584C3.16575 9.18042 2.5965 9.21426 2.0175 9.10044C2.487 10.6047 3.8505 11.6991 5.4675 11.7299C3.915 12.9781 1.959 13.5357 0 13.2988C1.63425 14.3732 3.576 15 5.661 15C12.5175 15 16.3912 9.06199 16.1572 3.73616C16.8787 3.20165 17.505 2.53486 18 1.77579Z"
-            fill="black" />
-        </svg>
-      </a>
-    </div>
-  </div>
 
-  <script src="https://kit.fontawesome.com/e2cab26559.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-  
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/e2cab26559.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
