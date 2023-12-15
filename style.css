@@ -429,7 +429,52 @@ body {
 }
 
 /* <!-- yogesh --> */
+.summerspecial{
+  width:100%;
+  height:450px;
+  /* padding:3%; */
+  
+  /* border:solid; */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ececec;
+}
 
+.leftsummer{
+ 
+  width:40%;
+  height:80%;
+  background-image: url(/public/boatsummerspecialleft.jfif);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+.rightsummer{
+  box-sizing: border-box;
+  padding:2%;
+  margin-left:-4%;
+  width:35%;
+  height:65%;
+  /* border:solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+.rightsummer>h2,h3,h4 {
+  margin: 0px;
+}
+.booknowbuttonsummer {
+  border-radius: 15px;
+  padding:8px;
+  background-color:#39a0ed ;
+  color : white;
+  border: none;
+}
 /* <!-- yogesh --> */
 
 /* Utkarsh*/
