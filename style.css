@@ -17,22 +17,27 @@
 }
 .frontNavbar {
     background-color : rgba(255, 255, 255, 0);
-    width:100%;
+    width:90%;
       color: white;
-      padding-top: 10px;
+      /* padding-top: 10px; */
       display: flex;
       justify-content: space-between;
       align-items: center;
+      /* border:solid; */
       border-bottom: solid 0.5px;
       /* /* top:700px; */
       position:sticky;
+      /* border: solid; */
+      box-sizing: border-box;
 }
   .nav-links {
     width:60%;
     list-style: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 20px;
+    /* border: solid; */
   }
 
   .nav-links li {
@@ -43,7 +48,7 @@
     font-size: large;
     text-decoration: none;
     color: white;
-    padding-bottom:13px;
+    padding-bottom:11px;
   }
   .nav-links a:hover{
     border-bottom:solid 7px;
@@ -52,7 +57,7 @@
   .profile-icon,
   .search-icon {
     margin-left: 10px;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     color: white;
     cursor: pointer;
   }
@@ -160,7 +165,7 @@
     background-color: #121030cc;
   }
   .bookingdetails input{
-    height:42px;
+    height:30px;
     border-radius: 12px;
     border:solid white 1px;
     color:white;
