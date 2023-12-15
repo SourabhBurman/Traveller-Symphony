@@ -17,7 +17,6 @@ function updateTimer() {
   }
 
   const timerInterval = setInterval(updateTimer, 1000);
-
 // <!-- vishnu -->
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -39,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     seeMoreButton.addEventListener('click', function (event) {
         event.preventDefault();
         fetchTravelDestinations();
+        window.location.href = 'destination.html';
     });
 });
 
@@ -52,27 +52,63 @@ function displayRating(container, value) {
 }
 
 let travelDestinationsArray = [];
-
-function fetchTravelDestinations() {
-    fetch('http://127.0.0.1:5500/local_api.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            travelDestinationsArray = data;
-            window.location.href = 'destination.html';
-        })
-        .catch(error => {
-            console.error('Fetch error:', error);
-        });
+fetchTravelDestinations();
+async function fetchTravelDestinations() {
+   let response = await fetch('http://127.0.0.1:5500/local_api.json')
+   let data = await response.json();
+            travelDestinationsArray = data.destinations;
+           fetchsomecard(travelDestinationsArray);
+            // console.log(travelDestinationsArray);
+            
 }
-
 // <!-- yogesh -->
+let caraouselcontainer = document.getElementById("caraouselcontainer");
+let caraouselbutton = document.getElementById("caraouselbutton");
+// fetchsomecard();
 
+function fetchsomecard(arr) {
+    for (let i = 0; i < 20; i++) {
+        const element = arr[i];
+        console.log(element);
+        let cardnew = createDestinationCard(element);
+        caraouselcontainer.append(cardnew);
+    }
+}
+let moveitnow=0;
+caraouselbutton.addEventListener('click',(e)=> {
+    moveitnow-=400;
+caraouselcontainer.style.transform = `translate(${moveitnow}px)`;
+caraouselcontainer.style.transition = `transform 1s ease-out`
+})
+function createDestinationCard(destination) {
+    const card = document.createElement('div');
+    card.classList.add('caraousel-card-only');
 
+    card.innerHTML = `
+        <div class="destination-image">
+            <img src="${destination.image}" alt="${destination.destination}" />
+            <div class="bookmark-icon">
+                <img src="./public/494568.png" />
+            </div>
+        </div>
+        <div class="product-card-description-bar">
+            <div class="left-description">
+                <h3 class="country-name">${destination.destination}</h3>
+                <div class="destination-info">
+                    <span class="destination-name">${destination.country}</span>
+                </div>
+            </div>
+            <div class="right-description">
+                <div class="rating-container">${destination.rating}
+                <span class="rating-star active">★</span>
+                </div>
+                <span class="days">${destination.days} days</span>
+            </div>
+        </div>
+    `;
+
+    return card;
+  }
 // <!-- utkarsh -->
 
 
