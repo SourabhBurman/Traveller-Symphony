@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+          body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .left h2{
+            font-size: xx-large;
+            font-weight: 50%;
+            text-align: center;
+        }
+        .box {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20%;
+        }
+        .box img {
+            max-width: 100%;
+            width: 80%;
+         height:100%;
+        }
+        .left {
+            flex: 1; /* Occupy remaining space in the flex container */
+            text-align: left;
+        }
+        .faq {
+            margin-top: 20px; /* Added margin for better spacing */
+        }
+        .left p{
+            width: 180%;
+            height: auto;
+        }
+        </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, at. Rerum, eos natus cupiditate nostrum culpa, aspernatur, exercitationem officia laborum totam error ducimus? Impedit, harum quae perferendis laborum odio laboriosam dolore consequuntur facilis deserunt at.</p>
+            <button id="learnMoreBtn">Learn More</button>
+        </div>
+        <div class="right">
+            <img src="https://www.blogtyrant.com/wp-content/uploads/2011/02/best-about-us-pages.png" alt="About Us Image"> <!-- Replace 'your-image-url.jpg' with your image URL -->
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <hr>
+            <h3>Q: What is Lorem Ipsum?</h3>
+            <p>Ans: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+             <hr>
+            <h3>Q: Why do we use it?</h3>
+            <p>Ans: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+               <hr>
+           
+        </div>
+    </div>
+</body>
+</html>

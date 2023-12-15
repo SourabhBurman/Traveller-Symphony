@@ -90,3 +90,14 @@ function fetchTravelDestinations() {
 
 
 // <!-- nidhi -->
+ // Contact Us 
+
+  document.getElementById('supportForm').addEventListener('submit' , function(event){
+    event.preventDefault();
+
+    var name=document.getElementById('name').value;
+    var phone=document.getElementById('phone').value;
+    var message=document.getElementById('message').value;
+
+    alert('Name' +name + '\nPhone:' + phone +'\nMessage:' + message);
+  });    
