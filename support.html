@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .box{
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color:#3ea8ff;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container{
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        display: flex;
+        gap:20px;
+        background-color: #fff;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        }
+        /* .container h2{
+            text-align: center;
+            font-size:xx-large;
+        } */
+        form {
+         display: grid;
+         gap: 15px;
+         flex:1;
+     }
+      label {
+        font-weight: bold;
+       }
+       input,
+         textarea {
+       width: 100%;
+       padding: 10px;
+       box-sizing: border-box;
+      }
+      input[type="submit"] {
+       background-color:red;
+       color: #fff;
+        cursor: pointer;
+     }
+     .right{
+        flex: 1; 
+        max-width: 50%;
+       
+     }
+     .right img{
+        width: 100%;
+         height:100%;
+     }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Contact Us</h2>
+    <div class="container">
+        <div class="heading" style="display: block;"></div>
+        <div class="right">
+            <img src="https://www.beyondblue.org.au/images/default-source/3.the-facts/support-someone-else/general-supporting-someone-else_mental-health-professional_hero-header_704x508.svg?sfvrsn=edb5b57f_2" alt="..">
+        </div>
+        <div class="left">
+       <form class="supportForm">
+         <label for="name">Name:</label>
+         <input type="text" name="name" id="name" required>
+         <br>
+         <label for="phone">Phone:</label>
+         <input type="tel" id="phone" name="phone" required>
+           <br>
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" cols="30" rows="4" required></textarea>
+            <br>
+          <input type="submit" value="Submit">
+       </form>
+    </div>
+    </div>
+</div>
+</body>
+</html> 
