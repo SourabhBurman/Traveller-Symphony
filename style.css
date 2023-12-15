@@ -628,3 +628,17 @@ body {
 .social > p {
   color: white;
 }
+
+/* Pagination Styles */
+.home-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#pages-container button.active {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}

@@ -62,27 +62,57 @@ document.addEventListener('DOMContentLoaded', function () {
     return card;
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Rating display logic
-    const ratingContainers = document.querySelectorAll('.rating-container');
-    ratingContainers.forEach(container => {
-        const textContent = container.textContent.trim();
-        const ratingValue = parseFloat(textContent);
-
-        if (!isNaN(ratingValue) && ratingValue >= 1 && ratingValue <= 5) {
-            displayRating(container, ratingValue);
-        } else {
-            console.error(`Invalid rating value`);
+  document.addEventListener('DOMContentLoaded', function () {
+    const itemsPerPage = 3; // Adjust as needed
+    let currentPage = 1;
+  
+    const totalPages = Math.ceil(travelDestinationsArray.length / itemsPerPage);
+  
+    function displayDestinations(page) {
+      const startIdx = (page - 1) * itemsPerPage;
+      const endIdx = startIdx + itemsPerPage;
+      const currentDestinations = travelDestinationsArray.slice(startIdx, endIdx);
+  
+      destinationContainer.innerHTML = ''; // Clear previous content
+  
+      currentDestinations.forEach(destination => {
+        const destinationCard = createDestinationCard(destination);
+        destinationContainer.appendChild(destinationCard);
+      });
+    }
+  
+    function updatePaginationButtons() {
+      // Update prev and next buttons
+      document.getElementById('prev-btn').disabled = currentPage === 1;
+      document.getElementById('next-btn').disabled = currentPage === totalPages;
+  
+      // Update page number buttons
+      const pagesContainer = document.getElementById('pages-container');
+      pagesContainer.innerHTML = '';
+  
+      for (let i = 1; i <= totalPages; i++) {
+        const pageBtn = document.createElement('button');
+        pageBtn.innerText = i;
+        pageBtn.addEventListener('click', function () {
+          currentPage = i;
+          displayDestinations(currentPage);
+          updatePaginationButtons();
+        });
+  
+        if (i === currentPage) {
+          pageBtn.classList.add('active');
         }
-    });
+  
+        pagesContainer.appendChild(pageBtn);
+      }
+    }
+  
+    // Initial display
+    displayDestinations(currentPage);
+    updatePaginationButtons();
+  });
 
-    //////////// Fetch data and navigate to destination.html/////
-    const seeMoreButton = document.querySelector('.see-more-button');
-    seeMoreButton.addEventListener('click', function (event) {
-        event.preventDefault();
-        fetchTravelDestinations();
-    });
-});
+
 
 function displayRating(container, value) {
     for (let i = 1; i <= 5; i++) {
