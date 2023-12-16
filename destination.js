@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let travelDestinationsArray = [];
 
   function fetchDestinations() {
-    return fetch('http://127.0.0.1:5500/local_api.json')
+    return fetch('https://traveller-jt36.onrender.com/destinations')
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return response.json();
       })
       .then(data => {
-        travelDestinationsArray = data.destinations;
+        travelDestinationsArray = data;
         return travelDestinationsArray;
       })
       .catch(error => {
