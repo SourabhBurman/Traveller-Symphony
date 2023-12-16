@@ -623,7 +623,7 @@ h4 {
 }
 .footer input {
   text-align: center;
-  margin: 50px;
+  margin: 2%;
   padding: 10px;
 }
 .footer > p {
@@ -660,7 +660,7 @@ h4 {
   font-size: large;
   /* row-gap:80%; */
   /* column-gap: 20%; */
-  padding-left: 10%;
+  padding-left: 15%;
   padding-bottom: 3%;
 }
 /* .trav{
@@ -671,11 +671,11 @@ h4 {
 .social {
   /* display:grid; */
   /* grid-template-rows: repeat(1px,4); */
-  padding: 5%;
+  padding: 2%;
   padding-left: 40%;
   gap: 10px;
   display: flex;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   flex-direction: row;
 }
 .social > p {
