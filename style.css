@@ -620,12 +620,15 @@ h4 {
   height: auto;
   background-color: #3ea8ff;
   text-align: center;
-   padding: 20px 0;
+
+  padding: 20px 0;
+
 }
 .footer input {
   text-align: center;
   margin: 2%;
   padding: 10px;
+  /* width: 100%;  */
 }
 .footer > p {
   font-weight: bolder;
@@ -680,6 +683,7 @@ h4 {
   flex: 2; 
   text-align: center;
 }
+
 .social {
   /* display:grid; */
   /* grid-template-rows: repeat(1px,4); */
@@ -687,8 +691,11 @@ h4 {
   padding-left: 50%;
   gap: 10px;
   display: flex;
-/*   padding-bottom: 1%;
-  flex-direction: row; */
+
+  /* padding-bottom: 1%; */
+  /* flex-direction:column;
+  align-items: center; */
+
 }
 .social > p {
   color: white;
@@ -709,6 +716,7 @@ h4 {
   }
 }
 
+
 @media only screen and (max-width: 480px) {
   .sub,
   .email {
@@ -727,6 +735,7 @@ h4 {
     flex-direction: column;
   }
 }
+
 /* Pagination Styles */
 .home-pagination {
   display: flex;
