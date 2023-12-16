@@ -3,102 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About Us - Your Travel Companion</title>
     <style>
-          body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #f4f4f4;
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        .left h2{
-            font-size: xx-large;
-            font-weight: 50%;
-            text-align: center;
-        }
-        .box {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: #fff;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .container{
             display: flex;
-            gap: 20%;
-        }
-        .box img {
-            max-width: 100%;
-            width: 80%;
-         height:100%;
+            gap:180px;
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            /* background-image: url(); */
+            background-color:#caf0f8;
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-bottom: 5%;
         }
         .left {
-            flex: 1; /* Occupy remaining space in the flex container */
-            text-align: left;
+            width: 50%;
+            /* background-color: #3498db; */
+            /* color: #fff; */
+            /* text-size-adjust: 20px; */
+            font-size: larger;
         }
-        .faq {
-            margin-top: 20px; /* Added margin for better spacing */
+        .right{
+            width: 50%;
+            /* text-size-adjust: 20px; */
+            font-size: larger;
+            font-weight: 20%;
+            
         }
-        .left p{
-            width: 180%;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 20px;
+        }
+
+        /* .left, .right{
+            max-width: 400px;
+            flex-grow: 1;
+        } */
+
+        h1, h2, p {
+            margin-bottom: 20px;
+            font-size: larger;
+            font-weight: 20%;
+        }
+        h1 , h2{
+            font-weight: bolder;
+        }
+
+        .about-text {
+            text-align: justify;
+        }
+
+        .about-image, .faq-image {
+            max-width: 100%;
             height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        @media only screen and (max-width: 768px) {
-            .box {
-                gap: 10px;
-            }
 
-            .box img {
-                width: 100%;
-                height: auto;
-            }
-
-            .left h1 {
-                font-size: 24px;
-            }
-
-            .left p {
-                width: 100%;
-                max-width: 100%;
-            }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
         }
-        @media only screen and (max-width: 480px) {
-            .box {
-                gap: 10px;
-            }
-
-            .left h1 {
-                font-size: 20px;
-            }
-        }
-        </style>
+    </style>
 </head>
 <body>
-    <div class="box">
+    <header>
+        <h1>Travel code symphony</h1>
+        <p>Explore the World with Us</p>
+    </header>
+
+    <section>
+        <div class="container">
         <div class="left">
             <h1>About Us</h1>
-            <p>At Traveller Code-Symphony, we believe in the transformative power of travel. Whether it's exploring new cultures, savoring exotic cuisines, or discovering hidden gems off the beaten path, we understand that every journey is a unique and enriching experience</p>
-            <button id="learnMoreBtn">Learn More</button>
-        </div>
-        <div class="right">
-            <img src="https://www.blogtyrant.com/wp-content/uploads/2011/02/best-about-us-pages.png" alt="About Us Image"> <!-- Replace 'your-image-url.jpg' with your image URL -->
-        </div>
-    </div>
-
-    <div class="box">
-        <div class="faq">
-            <h2>Frequently Asked Questions</h2>
             <hr>
-            <h3>Q: How do I book a trip on your website?</h3>
-            <p>Ans: Visit our homepage and use the search bar to find your desired destination. <br>
-                Select your travel dates and preferences, then click "Search."</p>
-             <hr>
-            <h3>Q: What payment methods do we accept?</h3>
-            <p>Ans: We accept major credit cards, including Visa, MasterCard, and American Express. Additionally, some destinations may offer alternative payment methods. </p>
-               <hr>
-               <h3>Q: Can I make changes to my booking after it's confirmed?</h3>
-               <p>Ans: Yes, you can make certain modifications to your booking. Please log in to your account or contact our customer support for assistance.</p>
-                  <hr>
-           
+            <div class="about-text">
+                <p>Welcome to Travel code symphony, where we turn your travel dreams into reality. Our passion for exploration and adventure has inspired us to create a platform that caters to the wanderlust in you.</p>
+                <p>At Travel code symphony, we believe that every journey is a story waiting to be told. Whether you're an avid traveler seeking new horizons or someone planning their first escape, we are here to make your travel experiences seamless and unforgettable.</p>
+                <p>Our team is comprised of seasoned travelers, travel enthusiasts, and experts in the field who are dedicated to curating exceptional travel experiences. From exotic destinations to off-the-beaten-path gems, we strive to provide you with a diverse array of options.</p>
+                <p>Discover the world with confidence, knowing that Travel code symphony is with you every step of the way. Join us on this exciting journey, and let's create memories that will last a lifetime.</p>
+            </div>
+            <img class="about-image" src="https://thumbs.dreamstime.com/b/travel-world-landmarks-background-blue-sky-46083021.jpg" alt="About Us Image">
+        </div>
+
+        <div class="right">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <hr>
+            <ul>
+                <li><strong>Q: How do I book a trip?</strong> </li>
+                <li><strong>A:</strong> You can easily book a trip through our website by following the simple booking process.</li>
+                
+                <li><strong>Q: Are there group discounts available?</strong> </li>
+                <li><strong>A:</strong> Yes, we offer group discounts for certain travel packages. Contact our support for more details.</li>
+              
+                <li><strong>Q: What payment methods do we accept?</strong></li>
+                <li><strong>A:</strong>We accept major credit cards, including Visa, MasterCard, and American Express. Additionally, some
+                    destinations may offer alternative payment methods</li>
+                   
+                <li><strong>Q: What is the cancellation policy?</strong> </li>
+                <li><strong>A:</strong> Our cancellation policy varies based on the type of trip. Check our terms and conditions for detailed information.</li>
+                
+                <li><strong>Q: Can I make changes to my booking after it's confirmed?</strong></li>
+                <li><strong>A:</strong> Yes, you can make certain modifications to your booking. Please log in to your account or contact
+                    our customer support for assistance.</li>
+                   
+                <li><strong>Q:  How can I contact customer support?</strong></li>
+                <li><strong>A:</strong> You can reach our customer support team through the contact information provided on our website.</li>
+               
+            </ul>
+            <img class="faq-image" src="https://www.shutterstock.com/image-photo/young-black-female-traveler-suitcase-260nw-2135539817.jpg" alt="FAQs Image">
         </div>
     </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Travel code symphony. All rights reserved.</p>
+    </footer>
 </body>
 </html>

@@ -620,14 +620,16 @@ h4 {
   height: auto;
   background-color: #3ea8ff;
   text-align: center;
-
+  
   padding: 20px 0;
 
 }
 .footer input {
   text-align: center;
   margin: 2%;
+  border: none;
   padding: 10px;
+  font-size: large;
   /* width: 100%;  */
 }
 .footer > p {
@@ -660,6 +662,13 @@ h4 {
   font-size: larger;
   font-weight: 200px;
 }
+.myAccount{
+  flex: 2;
+  text-align: left;
+}
+.footer input::placeholder {
+  color: #3ea8ff; 
+}
 .box {
   gap: 6%;
   display: flex;
@@ -667,6 +676,7 @@ h4 {
   flex-wrap: wrap; 
   justify-content: center;
   text-align: center;
+  /* justify-content: space-around; */
   font-size: large;
   /* row-gap:80%; */
   /* column-gap: 20%; */
@@ -678,13 +688,36 @@ h4 {
  gap:10%;
  row-gap: 10%;
 } */
+
+.myAccount > h2,
+.info > h2,
+.info2 > h2 {
+  margin: 2px 0;
+  text-align: left;
+}
+.trav >p ,
+.myAccount > p,
+.info > p,
+.info2 > p {
+  /* margin: 1px 0; */
+  text-align: left; 
+}
 .myAccount,
 .info,
 .info2 {
-  flex: 2; 
+  flex:1; 
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-
+.location span,
+.phone span,
+.email span {
+  margin-right: 15px; 
+}
+/* .email span{
+  margin-right: 50px ;
+} */
 .social {
   /* display:grid; */
   /* grid-template-rows: repeat(1px,4); */
@@ -692,16 +725,15 @@ h4 {
   padding-left: 45%;
   gap: 10px;
   display: flex;
-
   /* padding-bottom: 1%; */
   /* flex-direction:column;
   align-items: center; */
-
 }
+
 .social > p {
   color: white;
 }
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .sub,
   .email {
     width: 80%;
@@ -715,10 +747,10 @@ h4 {
   .social {
     padding-left: 10%;
   }
-}
+} */
 
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
   .sub,
   .email {
     width: 80%;
@@ -735,7 +767,8 @@ h4 {
     padding-left: 5%;
     flex-direction: column;
   }
-}
+} */
+
 
 /* Pagination Styles */
 .home-pagination {
