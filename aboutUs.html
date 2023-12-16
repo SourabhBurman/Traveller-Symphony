@@ -41,13 +41,41 @@
             width: 180%;
             height: auto;
         }
+        @media only screen and (max-width: 768px) {
+            .box {
+                gap: 10px;
+            }
+
+            .box img {
+                width: 100%;
+                height: auto;
+            }
+
+            .left h1 {
+                font-size: 24px;
+            }
+
+            .left p {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .box {
+                gap: 10px;
+            }
+
+            .left h1 {
+                font-size: 20px;
+            }
+        }
         </style>
 </head>
 <body>
     <div class="box">
         <div class="left">
             <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, at. Rerum, eos natus cupiditate nostrum culpa, aspernatur, exercitationem officia laborum totam error ducimus? Impedit, harum quae perferendis laborum odio laboriosam dolore consequuntur facilis deserunt at.</p>
+            <p>At Traveller Code-Symphony, we believe in the transformative power of travel. Whether it's exploring new cultures, savoring exotic cuisines, or discovering hidden gems off the beaten path, we understand that every journey is a unique and enriching experience</p>
             <button id="learnMoreBtn">Learn More</button>
         </div>
         <div class="right">
@@ -59,12 +87,16 @@
         <div class="faq">
             <h2>Frequently Asked Questions</h2>
             <hr>
-            <h3>Q: What is Lorem Ipsum?</h3>
-            <p>Ans: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <h3>Q: How do I book a trip on your website?</h3>
+            <p>Ans: Visit our homepage and use the search bar to find your desired destination. <br>
+                Select your travel dates and preferences, then click "Search."</p>
              <hr>
-            <h3>Q: Why do we use it?</h3>
-            <p>Ans: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <h3>Q: What payment methods do we accept?</h3>
+            <p>Ans: We accept major credit cards, including Visa, MasterCard, and American Express. Additionally, some destinations may offer alternative payment methods. </p>
                <hr>
+               <h3>Q: Can I make changes to my booking after it's confirmed?</h3>
+               <p>Ans: Yes, you can make certain modifications to your booking. Please log in to your account or contact our customer support for assistance.</p>
+                  <hr>
            
         </div>
     </div>
