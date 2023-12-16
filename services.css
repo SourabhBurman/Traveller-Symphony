@@ -1,0 +1,284 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: url("3439481.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  /* background-color: #333333c6; */
+  color: black;
+  text-align: center;
+  padding: 1em;
+}
+
+section {
+  max-width: 800px;
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* background-image: url(/pics/wepik-export-20231213110057mS4X.jpeg); */
+    background-position: center;
+    background-size: cover;
+  }
+
+  header {
+    background-color: rgb(236, 236, 236);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+
+  section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(62, 168, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  h2 {
+    color: #070707;
+  }
+
+  .flight-booking {
+    background-color: rgb(236, 236, 236);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .packages {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+  }
+
+  #book-now-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    background-color: rgb(62, 168, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #book-now-btn:hover {
+    background-color: rgb(62, 168, 255);
+    color: #071301;
+  }
+
+  /* Styles for the Travel Packages section */
+
+  .package {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    background: linear-gradient(
+      to bottom,
+      rgb(62, 168, 255) 50%,
+      rgb(236, 236, 236) 100%
+    );
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .package:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .package h3 {
+    color: rgb(236, 236, 236);
+    font-size: 1.5em;
+  }
+
+  .package p {
+    color: #141601;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .package button {
+    background: linear-gradient(to bottom, rgb(236, 236, 236) 0%, white 100%);
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .package button:hover {
+    background: linear-gradient(to bottom, rgb(62, 168, 255) 100%);
+  }
+
+  /* Styles for input tags */
+  input,
+  .submitButton {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .submitButton {
+    background-color: rgb(62, 168, 255);
+  }
+
+  /* Style for placeholder text */
+  input::placeholder {
+    color: black;
+  }
+
+  .submitButton:hover {
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: rgb(3, 7, 4);
+  }
+
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(62, 168, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h2 {
+  color: #070707;
+}
+
+.flight-booking {
+  background-color: rgb(236, 236, 236);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.packages {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+#book-now-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+  background-color: rgb(62, 168, 255);
+  color: #bbcbc5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#book-now-btn:hover {
+  background-color: rgb(62, 168, 255);
+  color: #071301;
+}
+
+/* Styles for the Travel Packages section */
+
+.package {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 10px;
+  background: linear-gradient(to bottom, rgb(62, 168, 255) 50%, #f3f3f3 100%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.package:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.package h3 {
+  color: rgb(236, 236, 236);
+  font-size: 1.5em;
+}
+
+.package p {
+  color: #141601;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.package button {
+  background: linear-gradient(
+    to bottom,
+    rgb(62, 168, 255) 0%,
+    rgb(236, 236, 236) 7 100%
+  );
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.package button:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(62, 168, 255),
+    rgb(236, 236, 236) 100%
+  );
+}
+
+/* Styles for input tags */
+input,
+.submitButton {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.submitButton {
+  background-color: rgb(236, 236, 236);
+  color: white;
+}
+
+/* Style for placeholder text */
+input::placeholder {
+  color: rgb(236, 236, 236);
+}
+
+.submitButton:hover {
+  background-color: rgb(62, 168, 255);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* color: rgb(3, 7, 4); */
+}

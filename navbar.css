@@ -1,0 +1,65 @@
+* {
+  margin-top: 0%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 2%;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo > img {
+  width: 7em;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-right: 1%;
+  padding: 0%;
+}
+
+.nav-list a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.nav-list a:hover {
+  color: rgb(62, 168, 255);
+  text-shadow: -1px -1px 0 #ddd, 1px -1px 0 #ddd, -1px 1px 0 #ddd,
+    1px 1px 0 #ddd;
+}
+
+.nav-actions {
+  display: flex;
+}
+
+.button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+.loginBtn {
+  background: linear-gradient(45deg, rgb(62, 168, 255) 60%, rgb(236, 236, 236));
+}
+.registerBtn {
+  background: linear-gradient(45deg, rgb(62, 168, 255), rgb(236, 236, 236));
+}
+.button:hover {
+  filter: saturate(150%) brightness(120%);
+}
