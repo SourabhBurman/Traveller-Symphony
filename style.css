@@ -620,6 +620,7 @@ h4 {
   height: auto;
   background-color: #3ea8ff;
   text-align: center;
+   padding: 20px 0;
 }
 .footer input {
   text-align: center;
@@ -628,7 +629,7 @@ h4 {
 }
 .footer > p {
   font-weight: bolder;
-  font-size: 35px;
+  font-size: 24px;
   color: white;
   text-align: center;
 }
@@ -636,7 +637,10 @@ h4 {
   font-size: larger;
   /* text-align: left; */
 }
-
+.sub , .email {
+  width: 100%;
+  margin: 5px 0;
+}
 .sub {
   width: 20%;
   height: 80%;
@@ -654,8 +658,11 @@ h4 {
   font-weight: 200px;
 }
 .box {
-  gap: 5%;
+  gap: 8%;
+  display: flex;
   color: white;
+  flex-wrap: wrap; 
+  justify-content: center;
   text-align: center;
   font-size: large;
   /* row-gap:80%; */
@@ -667,21 +674,59 @@ h4 {
  gap:10%;
  row-gap: 10%;
 } */
-
+.myAccount,
+.info,
+.info2 {
+  flex: 2; 
+  text-align: center;
+}
 .social {
   /* display:grid; */
   /* grid-template-rows: repeat(1px,4); */
-  padding: 2%;
-  padding-left: 40%;
+  padding: 1%;
+  padding-left: 50%;
   gap: 10px;
   display: flex;
-  padding-bottom: 1%;
-  flex-direction: row;
+/*   padding-bottom: 1%;
+  flex-direction: row; */
 }
 .social > p {
   color: white;
 }
+@media only screen and (max-width: 768px) {
+  .sub,
+  .email {
+    width: 80%;
+  }
 
+  .box {
+    padding-left: 5%;
+    width:100%;
+  }
+
+  .social {
+    padding-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sub,
+  .email {
+    width: 80%;
+  }
+
+  .box {
+    padding-left: 2%;
+    width:100%;
+    display: flex;
+  }
+
+  .social {
+    display: flex;
+    padding-left: 5%;
+    flex-direction: column;
+  }
+}
 /* Pagination Styles */
 .home-pagination {
   display: flex;
