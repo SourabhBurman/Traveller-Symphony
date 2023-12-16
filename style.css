@@ -661,7 +661,7 @@ h4 {
   font-weight: 200px;
 }
 .box {
-  gap: 8%;
+  gap: 6%;
   display: flex;
   color: white;
   flex-wrap: wrap; 
@@ -670,7 +670,8 @@ h4 {
   font-size: large;
   /* row-gap:80%; */
   /* column-gap: 20%; */
-  padding-left: 15%;
+  padding-left: 8%;
+  padding-right: 2%;
   padding-bottom: 3%;
 }
 /* .trav{
@@ -688,7 +689,7 @@ h4 {
   /* display:grid; */
   /* grid-template-rows: repeat(1px,4); */
   padding: 1%;
-  padding-left: 50%;
+  padding-left: 45%;
   gap: 10px;
   display: flex;
 
