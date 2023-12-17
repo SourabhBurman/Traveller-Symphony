@@ -11,14 +11,13 @@ let popuph2 = document.getElementById("popuph2");
 let popuphp = document.getElementById("popuphp");
 let closeit = document.getElementById("closeit");
 booknowbutton.addEventListener('click',(e)=> {
-    fetchrequest();
    popuph1.textContent = `Hi ! ${inputAddress1.value}`;
    popuph2.textContent = `Your Booking is Confirmed from : ${inputAddress2.value} to : ${inputEmail4.value}`;
    popuphp.textContent = `Date : ${inputDate.value}   Price : ${getRandomInt(1000,1500)}`
     setTimeout(()=> {
         popupbox.style.visibility="visible";
-    },2000)
-
+    },1500)
+    fetchrequest();
 })
 function fetchrequest() {
     fetch("https://traveller-jt36.onrender.com/bookings",{
