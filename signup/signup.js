@@ -8,31 +8,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const handleLoginSubmission = async (event) => {
         event.preventDefault();
-
-        const email = document.querySelector('.sign-in-container input[placeholder="Email"]').value;
-        const password = document.querySelector('.sign-in-container input[placeholder="Password"]').value;
-
+    
+        const emailInput = document.querySelector('.sign-in-container input[placeholder="Email"]');
+        const passwordInput = document.querySelector('.sign-in-container input[placeholder="Password"]');
+        const errorMessage = document.getElementById('errorMessage');
+    
+        const email = emailInput.value;
+        const password = passwordInput.value;
+    
         const userData = {
             email,
             password
         };
-
+    
         try {
-            const response = await fetch('https://jwt-auth-ichz.onrender.com/auth/login', {
+            const response = await fetch('http://localhost:3000/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(userData),
             });
-
+    
             if (response.ok) {
                 const { access_token } = await response.json();
                 sessionStorage.setItem('token', access_token);
                 console.log('Login successful. Token:', access_token);
+                errorMessage.textContent = 'Login Successful    ';
             } else {
                 const { message } = await response.json();
                 console.error('Login failed:', message);
+                errorMessage.textContent = 'Invalid credentials';
+
+    
             }
         } catch (error) {
             console.error('Error during login:', error.message);
@@ -51,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         try {
-            const response = await fetch('https://jwt-auth-ichz.onrender.com/auth/register', {
+            const response = await fetch('http://localhost:3000/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -83,3 +91,18 @@ document.addEventListener('DOMContentLoaded', () => {
     signInForm.addEventListener('submit', handleLoginSubmission);
     signUpForm.addEventListener('submit', handleSignupSubmission);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const signUpButton = document.getElementById('signup');
+    const signInModal = document.getElementById('signinModal');
+
+    signUpButton.addEventListener('click', () => {
+        signInModal.style.display = 'block';
+    });
+});
+
+// Function to close the modal
+function closeSignInModal() {
+    const signInModal = document.getElementById('signinModal');
+    signInModal.style.display = 'none';
+}
