@@ -59,8 +59,19 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
     `;
 
-    return card;
+    card.addEventListener('click', function () {
+      navigateToBookings(destination);
+    });
+
+  return card;
+
   }
+
+  function navigateToBookings(destination) {
+    const queryString = `?destination=${encodeURIComponent(destination.destination)}&country=${encodeURIComponent(destination.country)}`;
+    window.location.href = `booking1.html${queryString}`;
+  }
+
 
   document.addEventListener('DOMContentLoaded', function () {
     const itemsPerPage = 3; // Adjust as needed
