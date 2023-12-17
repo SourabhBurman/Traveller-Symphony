@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let travelDestinationsArray = [];
 
   function fetchDestinations() {
-    return fetch('http://127.0.0.1:5500/local_api.json')
+    return fetch('https://traveller-jt36.onrender.com/')
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -120,5 +120,6 @@ function displayRating(container, value) {
         star.className = 'rating-star ' + (i <= value ? 'active' : '');
         star.innerHTML = '&#9733;';
         container.appendChild(star);
+        //console.log('append successfull');
     }
 }

@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/SourabhBurman/code-symphony-4398/issues"
   },
-  "homepage": "https://github.com/SourabhBurman/code-symphony-4398#readme"
+  "homepage": "https://github.com/SourabhBurman/code-symphony-4398#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "json-server": "^0.17.4",
+    "jsonwebtoken": "^9.0.2"
+  }
 }

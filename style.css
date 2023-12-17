@@ -240,6 +240,7 @@ body {
 .title-landing-page {
   font-size: xx-large;
   margin: 10%;
+  margin-bottom: 20%;
 }
 
 .card-container {
@@ -434,6 +435,162 @@ body {
 .button-container {
   text-align: center;
 }
+.card-containerx {
+  display: inline-flex;
+  margin: 5%;
+}
+
+.destination-containerx {
+  display: inline-flex;
+  margin: 10px;
+}
+
+.columnx {
+  flex: 1;
+  margin: 10px;
+}
+
+.rowx {
+  margin: 5%;
+}
+
+.destination-cardx {
+  background-color: #f5f5f5;
+  border-radius: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  height: 100%;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
+  flex: 1;
+  margin: 20px;
+}
+
+.destination-cardx:hover { 
+  transform: translateY(-4px); 
+}
+
+.destination-imagex {
+  position: relative;
+  width: 100%;
+  border-radius: 20px 20px 0 0; /* Adjusted border-radius */
+  overflow: hidden;
+  height: 87%; /* Set to 100% to take up the entire column space */
+}
+
+.destination-imagex img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.bookmark-iconx {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  background-color: rgba(255, 255, 255, 0.8); /* 80% transparency */
+  padding: 8px;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.bookmark-iconx:hover {
+  transform: scale(1.1); /* Small hover effect */
+}
+
+.bookmark-iconx img {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  border-radius: 0%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.bookmark-iconx img:hover {
+  transform: scale(1.2); /* Larger hover effect */
+}
+
+.bookmark-iconx:active {
+  transform: scale(0.8); /* Pop effect on click */
+}
+
+.card-description-barx {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  width: 100%; /* Set width to 100% to ensure it stays within the column */
+  height: 13%;
+}
+
+.left-descriptionx {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.destination-infox {
+  display: flex;
+  align-items: center;
+}
+
+.country-namex {
+  font-weight: bolder;
+  font-size: 24px;
+  color: #333;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  margin-top: 12%;
+}
+
+.navigation-iconx {
+  width: 32px;
+  margin-bottom: 10%;
+  margin-left: 10%;
+}
+
+.destination-namex {
+  font-size: 1.2em;
+  color: #777;
+  font-weight: light;
+  margin-bottom: 10%;
+}
+
+.right-descriptionx {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 12%;
+}
+
+.rating-containerx {
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 12%;
+}
+
+.rating-starx {
+  cursor: pointer;
+  margin-right: 3px;
+  color: #ccc;
+}
+
+.rating-starx.active {
+  color: #ff8a1d; 
+}
+
+.daysx {
+  font-size: 1.0em;
+  font-weight: lighter;
+  color: #777;
+  margin-top: 12%;
+  text-align: left;
+  margin-right: 55%;
+  margin-bottom: 10%;
+}
+
 /*  reuasable button    */
 .see-more-button {
   display: inline-block;
