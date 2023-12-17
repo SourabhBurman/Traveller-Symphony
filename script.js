@@ -18,6 +18,21 @@ function updateTimer() {
 
   const timerInterval = setInterval(updateTimer, 1000);
 // <!-- vishnu -->
+document.addEventListener('DOMContentLoaded', () => {
+    const signUpButton = document.getElementById('signup');
+    const signInModal = document.getElementById('signinModal');
+
+    signUpButton.addEventListener('click', () => {
+        signInModal.style.display = 'block';
+    });
+});
+
+// Function to close the modal
+function closeSignInModal() {
+    const signInModal = document.getElementById('signinModal');
+    signInModal.style.display = 'none';
+}
+
 
 document.addEventListener("DOMContentLoaded", function () {
     // Rating display logic
