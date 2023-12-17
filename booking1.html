@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url(/public/mountains-190055_1280.jpg);">
+
+<!-- hidden popup -->
+
+<div id="popupbox">
+    <h1 style="text-align: center;" id="popuph1"></h1>
+    <h2 id="popuph2"></h2>
+    <p id="popuphp"></p>
+    <button id="closeit">close</button>
+</div>
+    <!-- navbar -->
+    <div class="frontHeader" style="background-image:url(/public/mountains-190055_1280.jpg);">
+        <div class="frontNavbar">
+            <a href="index.html" class="logo"><img style="width: 130px"
+                    src="/public/Pink_Minimal_Typography_Logo___2_-removebg-preview - Copy.png" alt="Travel" /></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Discover</a></li>
+                <li><a href="booking1.html">Bookings</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact1.html">Support</a></li>
+                <li>
+                    <div class="profile-icon">👤</div>
+                </li>
+                <li>
+                    <div class="search-icon">🔍</div>
+                </li>
+                <li>
+                    <a href="/signup/sign-in.html"><button id="signup" class="signup-btn">Sign Up</button></a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <!-- next -->
+        <section class=" slider_section position-relative">
+            <div class="detail-box">
+                <div class="row">
+                    <div class="col-md-8 col-lg-6 mx-auto">
+                        <h1>
+                            Book Now <br />
+                             Traveller Code Symphony
+                        </h1>
+                        <p>
+                            Book your package with us and enjoy a seamless travel experience.
+                        </p>
+                        <div>
+                            <a href="#">
+                                Book now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- booking -->
+
+        <section class="book_section ">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="heading_container" style="margin-top:250px">
+                            <h2 style="text-align: center;">
+                                Book Your Ticket  Now 
+                            </h2>
+                            <p  style="text-align: center;">
+                                Wanderlust Meets Booking: Your Gateway to Seamless Journeys.
+                            </p>
+                        </div>
+                        <form>
+                            <div class="form-row " style="display: flex; gap:20px;">
+                                <div class="form-group col-lg-4">
+                                    <label for="inputAddress1">Name</label>
+                                    <input type="text" class="form-control" id="inputAddress1"
+                                        placeholder="Enter your name">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label for="inputAddress2">From</label>
+                                    <input type="text" class="form-control" id="inputAddress2">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label for="inputEmail4">To</label>
+                                    <input type="text" class="form-control" id="inputEmail4">
+                                </div>
+                            </div>
+                            <div class="form-row " style="margin-top:30px; display: flex; gap:20px;">
+                                <div class="form-group col-lg-4">
+                                    <label for="inputDate">Date</label>
+                                    <input type="date" class="form-control" id="inputDate" placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label for="inputPrice">Email</label>
+                                    <input type="email" class="form-control" id="inputPrice" placeholder="email">
+                                </div>
+                                <div class="form-group col-lg-4">
+                                    <label for="inputPhone">Phone Number</label>
+                                    <input type="text" class="form-control" id="inputPhone">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center" style="margin-top: 30px;">
+                                <button type="submit" class="btn " id="booknowbutton">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="booking1.js"></script>
+</body>
+
+</html>

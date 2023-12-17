@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     card.classList.add('product-destination-card');
 
     card.innerHTML = `
-        <div class="destination-image">
+        <div class="destination-image" style="height:70%">
             <img src="${destination.image}" alt="${destination.destination}" />
             <div class="bookmark-icon">
                 <img src="./public/494568.png" />
@@ -120,6 +120,5 @@ function displayRating(container, value) {
         star.className = 'rating-star ' + (i <= value ? 'active' : '');
         star.innerHTML = '&#9733;';
         container.appendChild(star);
-        //console.log('append successfull');
     }
 }

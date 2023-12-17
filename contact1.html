@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(/public/pexels-stephan-seeber-1261728.jpg); background-position: center; background-size: cover;">
+
+    <div class="frontNavbar" style="margin:auto; width:90%; height:70px">
+        <a href="index.html" class="logo"><img style="width:130px;"
+                src="/public/Pink_Minimal_Typography_Logo___2_-removebg-preview - Copy.png" alt="Travel"></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destination.html">Discover</a></li>
+          <li><a href="booking1.html">Bookings</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contact1.html">Support</a></li>
+            <li>
+                <div class="profile-icon">👤</div>
+            </li>
+            <li>
+                <div class="search-icon">🔍</div>
+            </li>
+            <li><button id="signup" class="signup-btn">Sign Up</button></li>
+        </ul>
+    </div>
+    <div class="content">
+    
+        <div class="container"  style="display: flex ;justify-content: space-around;">
+          <div class="row align-items-stretch no-gutters contact-wrap">
+            <div class="col-md-6">
+              <div class="form h-100" style="background-color: rgba(45, 45, 45, 0.616); border-radius:20px;">
+                <h3 style="color:rgb(209, 209, 238)">Send us a message</h3>
+                <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                  <div class="row">
+                    <div class="col-md-6 form-group mb-5">
+                      <label for="" class="col-form-label" style="color:white">Name</label>
+                      <input type="text" style="margin-left:70px" class="form-control" name="name" id="name" placeholder="Your name">
+                    </div>
+                    <div class="col-md-6 form-group mb-5">
+                      <label for="" class="col-form-label"  style="color:white">Email</label>
+                      <input type="text"  style="margin-left:70px" class="form-control" name="email" id="email"  placeholder="Your email">
+                    </div>
+                  </div>
+    
+                  <div class="row">
+                    <div class="col-md-6 form-group mb-5">
+                      <label for="" class="col-form-label"  style="color:white">Phone</label>
+                      <input type="text"  style="margin-left:70px" class="form-control" name="phone" id="phone"  placeholder="Phone #">
+                    </div>
+                    <div class="col-md-6 form-group mb-5">
+                      <label for="" class="col-form-label"  style="color:white">Company</label>
+                      <input type="text"  style="margin-left:50px" class="form-control" name="company" id="company"  placeholder="Company  name">
+                    </div>
+                  </div>
+    
+                  <div class="row">
+                    <div class="col-md-12 form-group mb-5">
+                      <label for="message" class="col-form-label"  style="color:white">Message</label>
+                      <textarea class="form-control"  style="margin-left:50px" name="message" id="message" cols="30" rows="4"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <!-- <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4" id="sendbutton"> -->
+                      <button id="sendbutton" style="padding:10px; color:white; border-radius:15px; background-color:#39a0ed; border:none;">Send Message</button>
+                      <span class="submitting"></span>
+                    </div>
+                  </div>
+                </form>
+    
+    
+              </div>
+            </div>
+           
+            </div>
+            <div  style=" width:600px; height:425px; border-radius: 20px; overflow: hidden;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13860.032638054952!2d77.09098035!3d29.719522899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1702798423569!5m2!1sen!2sin" width="100%" height="100%" style="border:none" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+        </div>
+        <div id="popupbox">
+            <h1 style="text-align: center;" id="popuph1"></h1>
+            <h2 id="popuph2"></h2>
+            <p id="popuphp"></p>
+            <button id="closeit">close</button>
+        </div>
+        
+
+        <script src="contact1.js"></script>
+</body>
+</html>

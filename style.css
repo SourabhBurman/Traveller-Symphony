@@ -238,34 +238,48 @@ body {
 }
 
 .title-landing-page {
-  font-size: xx-large;
-  margin: 10%;
-  margin-bottom: 20%;
+  font-size: 1.3rem;
+  margin: 2px;
 }
 
 .card-container {
-  display: inline-flex;
+  height:550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 5%;
+  padding:3%;
 }
 
-.column {
-  flex: 1;
-  margin: 10px;
+.column1,.column3 {
+  width:32%;
+  height:100%;
+  /* display:flex;
+  flex-direction: column; */
+  /* border:solid; */
+  /* justify-content: space-between; */
+  box-sizing: border-box;
+}
+.column2{
+  width:32%;
+  height:100%;
+  box-sizing: border-box;
+  /* border:solid; */
 }
 
-.row {
+/* .row {
   margin: 5%;
-}
+} */
 
 .destination-card {
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 100%;
   transition: background-color 0.3s, transform 0.3s;
   width: 100%;
-  flex: 1;
-  margin: 20px;
+  /* flex: 1; */
+  /* margin: 20px; */
 }
 /*////////////////////////////////// this is the single container used on destination.html but i cant seem to fit it as grid helppppppppp   //////////*/
 
@@ -296,17 +310,17 @@ body {
 }
 
 .destination-image {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   border-radius: 20px 20px 0 0; /* Adjusted border-radius */
-  overflow: hidden;
-  height: 70%; /* Set to 100% to take up the entire column space */
+  /* overflow: hidden; */
+  /* height: 70%; Set to 100% to take up the entire column space */
 }
 
 .destination-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   border-radius: 20px 20px 0 0;
 }
 
@@ -319,6 +333,7 @@ body {
   padding: 8px;
   border-radius: 7px;
   transition: transform 0.2s ease-in-out;
+  display: none;
 }
 
 .bookmark-icon:hover {
@@ -331,6 +346,7 @@ body {
   margin: 10%;
   border-radius: 0%;
   transition: transform 0.2s ease-in-out;
+  display: none;
 }
 
 .bookmark-icon img:hover {
@@ -347,7 +363,7 @@ body {
   background-color: #fff;
   border-radius: 0 0 20px 20px;
   width: 100%; /* Set width to 100% to ensure it stays within the column */
-  height: 13%;
+  /* height: 13%; */
 }
 .product-card-description-bar {
   display: flex;
@@ -357,12 +373,14 @@ body {
   width: 100%; /* Set width to 100% to ensure it stays within the column */
   height: 30%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10%;
+  overflow-y: hidden;
+  /* margin-bottom: 10%; */
 }
 
 .left-description {
   display: flex;
   align-items: center;
+  /* justify-content: space-around; */
   flex-direction: column;
   margin-left: 5%;
 }
@@ -427,170 +445,14 @@ body {
   margin-bottom: 10%;
 }
 
-.title-landing-page {
+/* .title-landing-page {
   margin-bottom: 25%;
   margin-top: 2%;
-}
+} */
 
 .button-container {
   text-align: center;
 }
-.card-containerx {
-  display: inline-flex;
-  margin: 5%;
-}
-
-.destination-containerx {
-  display: inline-flex;
-  margin: 10px;
-}
-
-.columnx {
-  flex: 1;
-  margin: 10px;
-}
-
-.rowx {
-  margin: 5%;
-}
-
-.destination-cardx {
-  background-color: #f5f5f5;
-  border-radius: 20px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  height: 100%;
-  transition: background-color 0.3s, transform 0.3s;
-  width: 100%;
-  flex: 1;
-  margin: 20px;
-}
-
-.destination-cardx:hover { 
-  transform: translateY(-4px); 
-}
-
-.destination-imagex {
-  position: relative;
-  width: 100%;
-  border-radius: 20px 20px 0 0; /* Adjusted border-radius */
-  overflow: hidden;
-  height: 87%; /* Set to 100% to take up the entire column space */
-}
-
-.destination-imagex img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
-}
-
-.bookmark-iconx {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 24px;
-  background-color: rgba(255, 255, 255, 0.8); /* 80% transparency */
-  padding: 8px;
-  border-radius: 5px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.bookmark-iconx:hover {
-  transform: scale(1.1); /* Small hover effect */
-}
-
-.bookmark-iconx img {
-  width: 80%;
-  height: 80%;
-  margin: 10%;
-  border-radius: 0%;
-  transition: transform 0.2s ease-in-out;
-}
-
-.bookmark-iconx img:hover {
-  transform: scale(1.2); /* Larger hover effect */
-}
-
-.bookmark-iconx:active {
-  transform: scale(0.8); /* Pop effect on click */
-}
-
-.card-description-barx {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  border-radius: 0 0 20px 20px;
-  width: 100%; /* Set width to 100% to ensure it stays within the column */
-  height: 13%;
-}
-
-.left-descriptionx {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-left: 5%;
-}
-
-.destination-infox {
-  display: flex;
-  align-items: center;
-}
-
-.country-namex {
-  font-weight: bolder;
-  font-size: 24px;
-  color: #333;
-  margin-left: 10%;
-  margin-bottom: 10%;
-  margin-top: 12%;
-}
-
-.navigation-iconx {
-  width: 32px;
-  margin-bottom: 10%;
-  margin-left: 10%;
-}
-
-.destination-namex {
-  font-size: 1.2em;
-  color: #777;
-  font-weight: light;
-  margin-bottom: 10%;
-}
-
-.right-descriptionx {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-right: 12%;
-}
-
-.rating-containerx {
-  font-weight: bold;
-  font-size: 19px;
-  margin-top: 12%;
-}
-
-.rating-starx {
-  cursor: pointer;
-  margin-right: 3px;
-  color: #ccc;
-}
-
-.rating-starx.active {
-  color: #ff8a1d; 
-}
-
-.daysx {
-  font-size: 1.0em;
-  font-weight: lighter;
-  color: #777;
-  margin-top: 12%;
-  text-align: left;
-  margin-right: 55%;
-  margin-bottom: 10%;
-}
-
 /*  reuasable button    */
 .see-more-button {
   display: inline-block;
@@ -610,7 +472,7 @@ body {
 
 /* <!-- yogesh --> */
 .summerspecial {
-  margin-top: 60px;
+  margin-top: 130px;
   width: 100%;
   height: 450px;
   /* padding:3%; */
@@ -663,28 +525,34 @@ h4 {
   display: flex;
   /* justify-content: space-around; */
   align-items: center;
-  gap: 100px;
+  gap: 130px;
   margin: 30px;
   margin-top: 60px;
   /* border: solid; */
+  /* box-sizing: border-box; */
 }
 .caraousel-card-only {
   width: 300px;
-  height: 400px;
+  height: 300px;
+}
+.caraousel-card-only img {
+  width:300px;
+  height:300px;
 }
 #caraouselbutton {
-  margin-left: 47%;
-  border-radius: 14px;
+  margin-top: 100px;
+  margin-left: 46%;
+  border-radius: 20px;
   background-color: #19a3ff;
   color: #ffffff;
   border: none;
-  padding: 5px;
-  margin-top: 20px;
+  padding: 10px 15px 10px 15px;
 }
 /* Utkarsh*/
 
 .headingU {
   text-align: center;
+  margin-top:50px;
 }
 
 .container {
@@ -711,7 +579,7 @@ h4 {
   border-radius: 50%;
 }
 .photo {
-  background-image: url(dp1.jpg);
+  background-image: url(/public/dp1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -724,7 +592,7 @@ h4 {
   border-radius: 50%;
 }
 .photo1 {
-  background-image: url(2dp.jpg);
+  background-image: url(/public/2dp.jpg);
   background-size: cover;
 }
 
@@ -736,7 +604,7 @@ h4 {
   border-radius: 50%;
 }
 .photo2 {
-  background-image: url(3dp.jpg);
+  background-image: url(/public/3dp.jpg);
   background-size: cover;
 }
 .details {
@@ -777,16 +645,14 @@ h4 {
   height: auto;
   background-color: #3ea8ff;
   text-align: center;
-  
+
   padding: 20px 0;
 
 }
 .footer input {
   text-align: center;
   margin: 2%;
-  border: none;
   padding: 10px;
-  font-size: large;
   /* width: 100%;  */
 }
 .footer > p {
@@ -806,75 +672,58 @@ h4 {
 .sub {
   width: 20%;
   height: 80%;
-  border-radius: 10px;
+  border-radius: 18px;
   padding: 10px;
+  border: none;
 }
 .email {
   width: 40%;
   height: 40%;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 18px;
+  border: none;
+  /* padding: 10px; */
+}
+.email::placeholder,.sub::placeholder{
+  color:#19a3ff;
+  font-weight: 600;
 }
 .myAccount > p {
   font-size: larger;
   font-weight: 200px;
 }
-.myAccount{
-  flex: 2;
-  text-align: left;
-}
-.footer input::placeholder {
-  color: #3ea8ff; 
-}
 .box {
   gap: 6%;
   display: flex;
+  justify-content: space-around;
   color: white;
   flex-wrap: wrap; 
   justify-content: center;
   text-align: center;
-  /* justify-content: space-around; */
   font-size: large;
+  padding:1% 5% 3% 5%;
   /* row-gap:80%; */
   /* column-gap: 20%; */
-  padding-left: 8%;
-  padding-right: 2%;
-  padding-bottom: 3%;
+  /* padding-left: 8%; */
+  /* padding-right: 2%; */
+  /* padding-bottom: 3%; */
+}
+.box h2{
+  margin-bottom:15px;
 }
 /* .trav{
  gap:10%;
  row-gap: 10%;
 } */
-
-.myAccount > h2,
-.info > h2,
-.info2 > h2 {
-  margin: 2px 0;
-  text-align: left;
-}
-.trav >p ,
-.myAccount > p,
-.info > p,
-.info2 > p {
-  /* margin: 1px 0; */
-  text-align: left; 
-}
+.Traveller,
 .myAccount,
 .info,
 .info2 {
-  flex:1; 
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  flex: 2; 
+  text-align: start;
+  font-size: smaller;
+  margin-bottom: 20px;
 }
-.location span,
-.phone span,
-.email span {
-  margin-right: 15px; 
-}
-/* .email span{
-  margin-right: 50px ;
-} */
+
 .social {
   /* display:grid; */
   /* grid-template-rows: repeat(1px,4); */
@@ -882,15 +731,16 @@ h4 {
   padding-left: 45%;
   gap: 10px;
   display: flex;
+
   /* padding-bottom: 1%; */
   /* flex-direction:column;
   align-items: center; */
-}
 
+}
 .social > p {
   color: white;
 }
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .sub,
   .email {
     width: 80%;
@@ -904,10 +754,10 @@ h4 {
   .social {
     padding-left: 10%;
   }
-} */
+}
 
 
-/* @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .sub,
   .email {
     width: 80%;
@@ -924,8 +774,7 @@ h4 {
     padding-left: 5%;
     flex-direction: column;
   }
-} */
-
+}
 
 /* Pagination Styles */
 .home-pagination {
@@ -939,38 +788,4 @@ h4 {
   background-color: #007bff;
   color: #fff;
   border: 1px solid #007bff;
-}
-
-
-
-
-/* Add this to your existing CSS or create a new CSS file */
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
-}
-
-.modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-/* For the close button */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  cursor: pointer;
 }

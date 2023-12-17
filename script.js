@@ -18,21 +18,6 @@ function updateTimer() {
 
   const timerInterval = setInterval(updateTimer, 1000);
 // <!-- vishnu -->
-document.addEventListener('DOMContentLoaded', () => {
-    const signUpButton = document.getElementById('signup');
-    const signInModal = document.getElementById('signinModal');
-
-    signUpButton.addEventListener('click', () => {
-        signInModal.style.display = 'block';
-    });
-});
-
-// Function to close the modal
-function closeSignInModal() {
-    const signInModal = document.getElementById('signinModal');
-    signInModal.style.display = 'none';
-}
-
 
 document.addEventListener("DOMContentLoaded", function () {
     // Rating display logic
@@ -69,9 +54,9 @@ function displayRating(container, value) {
 let travelDestinationsArray = [];
 fetchTravelDestinations();
 async function fetchTravelDestinations() {
-   let response = await fetch('http://127.0.0.1:5500/local_api.json')
+   let response = await fetch('https://traveller-jt36.onrender.com/destinations')
    let data = await response.json();
-            travelDestinationsArray = data.destinations;
+            travelDestinationsArray = data;
            fetchsomecard(travelDestinationsArray);
             // console.log(travelDestinationsArray);
             

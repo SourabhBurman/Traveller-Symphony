@@ -1,0 +1,191 @@
+/* html {
+    scroll-behavior: smooth;
+  } */
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+  }
+  /*end header section*/
+  .slider_section {
+    padding-top: 45px;
+    /* overflow-x: hidden; */
+  }
+
+  
+  .slider_section .detail-box {
+    color: #ffffff;
+    margin-top: 75px;
+    text-align: center;
+    padding: 0 15px;
+  }
+  
+  .slider_section .detail-box h1 {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  
+  .slider_section .detail-box h1 span {
+    color: #fefefe;
+  }
+  
+  .slider_section .detail-box p {
+    margin-top: 15px;
+  }
+  
+  .slider_section .detail-box a {
+    display: inline-block;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: 35px;
+  }
+  
+  .slider_section .detail-box a:hover {
+    background: transparent;
+    color: #ffffff;
+  }
+  
+  .slider_section .img-box {
+    background-image: url(../images/slider-bg.png);
+    background-position: bottom;
+    background-size: 100%;
+    padding-bottom: 375px;
+    position: relative;
+    background-repeat: no-repeat;
+  }
+  
+  .slider_section .img-box .play_btn {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0856dd), to(#0ad8ab));
+    background: linear-gradient(to bottom, #0856dd, #0ad8ab);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    z-index: 3;
+    top: 90px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  
+  .slider_section .img-box .play_btn a {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0856dd), to(#0ad8ab));
+    background: linear-gradient(to bottom, #0856dd, #0ad8ab);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .slider_section .img-box .play_btn img {
+    width: 20px;
+    margin-left: 3px;
+  }
+  
+  .slider_section .img-box .play_btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0856dd), to(#0ad8ab));
+    background: linear-gradient(to bottom, #0856dd, #0ad8ab);
+    opacity: 1;
+    border-radius: 100%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  .slider_section .img-box .play_btn::before {
+    z-index: 2;
+    -webkit-animation: before-animation 1500ms infinite;
+            animation: before-animation 1500ms infinite;
+  }
+  
+  .book_section {
+    margin-top: -220px;
+    margin-bottom: 200px;
+  }
+  
+  .book_section .heading_container {
+    margin-bottom: 35px;
+  }
+  
+  .book_section form {
+    background-color: #fff;
+    padding: 35px 45px;
+    border-radius: 45px 0 45px 0;
+  }
+  
+  .book_section form label {
+    color: #000000;
+  }
+  
+  .book_section form .form-control {
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 35px;
+    padding: 10px 15px;
+    height: auto;
+  }
+  
+  .book_section form button.btn {
+    background: -webkit-gradient(linear, left top, right top, from(#3182cb), to(#2eb19c));
+    background: linear-gradient(to right, #3182cb, #2eb19c);
+    color: #ffffff;
+    padding: 10px 75px;
+    border-radius: 45px;
+    margin-top: 10px;
+  }
+  
+ #popupbox{
+    margin:auto;
+    /* margin-top:40vh; */
+    width: 50%;
+    height:200px;
+    background-color: #fefefe;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    top:40vh;
+    left:350px;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(44, 43, 43);
+    visibility: hidden;
+    border-radius: 15px;
+ }
+ #closeit{
+    padding: 10px;
+border-radius: 10px;
+ }
