@@ -2,6 +2,7 @@
 
 ## Desription
 Welcome to Travel Code Symphony, your go-to destination for seamless travel experiences! This collaborative project is developed by a team of five passionate individuals during the Construct Week. We aim to provide users with a user-friendly platform to explore destinations, plan trips, and make bookings hassle-free.
+http://127.0.0.1:5500/code-symphony-4398/
 
 ## Tech Stacks Used
 **HTML** : We use HTML for structuring the web pages, ensuring a solid foundation for our content.
@@ -65,6 +66,8 @@ Welcome to Travel Code Symphony, your go-to destination for seamless travel expe
  
  Include a summary of the booked trips and options for modification or cancellation.
 
+**BOOK NOW**
+http://127.0.0.1:5500/code-symphony-4398/
 
 **"Embark on a journey with Travel Code Symphony"**
 **Happy traveling! ✈️🌍**
