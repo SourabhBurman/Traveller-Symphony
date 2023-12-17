@@ -2,6 +2,62 @@
     scroll-behavior: smooth;
   } */
   
+  .frontNavbar {
+    background-color: rgba(255, 255, 255, 0);
+    width: 90%;
+    margin: auto;
+    color: white;
+    /* padding-top: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border:solid; */
+    border-bottom: solid 0.5px;
+    /* /* top:700px; */
+    position: sticky;
+    /* border: solid; */
+    box-sizing: border-box;
+  }
+  .nav-links {
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    /* border: solid; */
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 11px;
+  }
+  .nav-links a:hover {
+    border-bottom: solid 7px;
+    border-radius: 5px;
+  }
+  .profile-icon,
+  .search-icon {
+    margin-left: 10px;
+    /* font-size: 1.2em; */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .signup-btn {
+    padding: 8px 16px;
+    background-color: #39a0ed;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
   body {
     font-family: "Poppins", sans-serif;
     color: #ffffff;
@@ -166,9 +222,8 @@
     margin-top: 10px;
   }
   
- #popupbox{
+ /* #popupbox{
     margin:auto;
-    /* margin-top:40vh; */
     width: 50%;
     height:200px;
     background-color: #fefefe;
@@ -188,4 +243,68 @@
  #closeit{
     padding: 10px;
 border-radius: 10px;
- }
+ } */
+
+
+
+ /*  */
+ * {
+  box-sizing: border-box;
+}
+
+
+.clash-card {
+ 
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 20px;
+  position: absolute;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+  margin-left:40vw;
+  margin-top:15vh;
+  visibility: hidden;
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.clash-card__image--barbarian {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+
+  img {
+      width: 400px;
+      position: absolute;
+      top: -65px;
+      left: -70px;
+  }
+}
+
+
+.clash-card__level {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+
+.clash-card__unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;
+}

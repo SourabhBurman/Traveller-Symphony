@@ -6,21 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="booking1.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-image: url(/public/mountains-190055_1280.jpg);">
+<body>
+    <div class="backg" style="background-image: url(/public/mountains-190055_1280.jpg); width:110%;
+height:110vh;top:0px;left:0px;filter:blur(1px);position: fixed;z-index: -1;"></div>
+    <!-- hidden popup -->
 
-<!-- hidden popup -->
+            <div class="clash-card barbarian" id="popupbox">
+                <div class="clash-card__image clash-card__image--barbarian" style="z-index:0">
+                    <img src="/public/—Pngtree—airplane travel tourism supplies_6374202.png" style="margin-top:-50px;"
+                        alt="flight" />
+                </div>
+                <div style="background-color: white; z-index:4;">
+                    <div class="clash-card__level clash-card__level--barbarian" style="color:black">Booking Confirmed for
+                    </div>
+                    <div class="clash-card__unit-name" id="sname">Sourav Burman</div>
+                    <div class="clash-card__unit-description" style="color:black">
+                        From : <span style="font-weight:bolder" id="sfrom">New Delhi</span> to <span
+                            style="font-weight : bolder; font-size:25px" id="sto">Mumbai</span><br>
+                        <br>
+                        Date of Departure : <span id="sdate">12-14 </span><br>
+                        <br>
+                        Price - <span style="font-weight : bolder" id="sprice">1234</span>
 
-<div id="popupbox">
-    <h1 style="text-align: center;" id="popuph1"></h1>
-    <h2 id="popuph2"></h2>
-    <p id="popuphp"></p>
-    <button id="closeit">close</button>
-</div>
+                    </div>
+                </div>
+                <button id="closeit" style="margin-bottom:10px; padding:5px; border-radius: 15px; border:none; background-color: black;color: white;">close</button>
+            </div>
     <!-- navbar -->
-    <div class="frontHeader" style="background-image:url(/public/mountains-190055_1280.jpg);">
+    <div class="frontHeader">
         <div class="frontNavbar">
             <a href="index.html" class="logo"><img style="width: 130px"
                     src="/public/Pink_Minimal_Typography_Logo___2_-removebg-preview - Copy.png" alt="Travel" /></a>
@@ -51,7 +66,7 @@
                     <div class="col-md-8 col-lg-6 mx-auto">
                         <h1>
                             Book Now <br />
-                             Traveller Code Symphony
+                            Traveller Code Symphony
                         </h1>
                         <p>
                             Book your package with us and enjoy a seamless travel experience.
@@ -75,14 +90,14 @@
                     <div class="col">
                         <div class="heading_container" style="margin-top:250px">
                             <h2 style="text-align: center;">
-                                Book Your Ticket  Now 
+                                Book Your Ticket Now
                             </h2>
-                            <p  style="text-align: center;">
+                            <p style="text-align: center;">
                                 Wanderlust Meets Booking: Your Gateway to Seamless Journeys.
                             </p>
                         </div>
-                        <form>
-                            <div class="form-row " style="display: flex; gap:20px;">
+                        <form style="width:70%; margin:auto;">
+                            <div class="form-row " style="display: flex; justify-content: space-around;">
                                 <div class="form-group col-lg-4">
                                     <label for="inputAddress1">Name</label>
                                     <input type="text" class="form-control" id="inputAddress1"
@@ -97,7 +112,8 @@
                                     <input type="text" class="form-control" id="inputEmail4">
                                 </div>
                             </div>
-                            <div class="form-row " style="margin-top:30px; display: flex; gap:20px;">
+                            <div class="form-row "
+                                style="margin-top:30px; display: flex;justify-content: space-around;">
                                 <div class="form-group col-lg-4">
                                     <label for="inputDate">Date</label>
                                     <input type="date" class="form-control" id="inputDate" placeholder="1234 Main St">
@@ -107,11 +123,12 @@
                                     <input type="email" class="form-control" id="inputPrice" placeholder="email">
                                 </div>
                                 <div class="form-group col-lg-4">
-                                    <label for="inputPhone">Phone Number</label>
+                                    <label for="inputPhone">Phone</label>
                                     <input type="text" class="form-control" id="inputPhone">
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-center" style="margin-top: 30px;">
+                            <div class="d-flex justify-content-center"
+                                style="margin-top: 30px; display: flex; justify-content: center;">
                                 <button class="btn" id="booknowbutton">Book Now</button>
                             </div>
                         </form>

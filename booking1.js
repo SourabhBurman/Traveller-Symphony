@@ -6,18 +6,28 @@ let inputPrice = document.getElementById("inputPrice");
 let inputPhone = document.getElementById("inputPhone");
 let booknowbutton = document.getElementById("booknowbutton");
 let popupbox = document.getElementById("popupbox");
-let popuph1 = document.getElementById("popuph1");
-let popuph2 = document.getElementById("popuph2");
-let popuphp = document.getElementById("popuphp");
+let sname = document.getElementById("sname");
+let sfrom = document.getElementById("sfrom");
+let sto = document.getElementById("sto");
+let sdate = document.getElementById("sdate");
+let sprice = document.getElementById("sprice");
 let closeit = document.getElementById("closeit");
 booknowbutton.addEventListener('click',(e)=> {
-   popuph1.textContent = `Hi ! ${inputAddress1.value}`;
-   popuph2.textContent = `Your Booking is Confirmed from : ${inputAddress2.value} to : ${inputEmail4.value}`;
-   popuphp.textContent = `Date : ${inputDate.value}   Price : ${getRandomInt(1000,1500)}`
+    console.log("ok");
+   sname.textContent = inputAddress1.value;
+   sfrom.textContent = inputAddress2.value;
+   sto.textContent = inputEmail4.value;
+   sdate.textContent = inputDate.value;
+   sprice.textContent = getRandomInt(1000,1500);
+   if(inputAddress1.value) {
     setTimeout(()=> {
         popupbox.style.visibility="visible";
-    },1500)
-    fetchrequest();
+        fetchrequest();
+    },1000)
+   } else {
+alert("please enter required fields")
+   }
+    
 })
 function fetchrequest() {
     fetch("https://traveller-jt36.onrender.com/bookings",{
