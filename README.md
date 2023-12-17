@@ -9,6 +9,8 @@ http://127.0.0.1:5500/code-symphony-4398/
 
 **CSS** : Our styling is powered by CSS to create visually appealing and responsive designs.
 
+**JavaScript** : Enhancing user interactions and functionality through dynamic scripting.
+
 **VS Code** : The project is developed using Visual Studio Code, a lightweight and powerful code editor.
 
 **GitHub** : We leverage GitHub for version control and collaborative development, ensuring smooth teamwork.
