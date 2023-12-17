@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     
         try {
-            const response = await fetch('http://localhost:3000/auth/login', {
+            const response = await fetch('https://jwt-auth2.onrender.com/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         try {
-            const response = await fetch('http://localhost:3000/auth/register', {
+            const response = await fetch('https://jwt-auth2.onrender.com/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -102,7 +102,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Function to close the modal
-function closeSignInModal() {
-    const signInModal = document.getElementById('signinModal');
-    signInModal.style.display = 'none';
-}
