@@ -16,6 +16,16 @@ function updateTimer() {
     }
   }
 
+  function openHalfWindow() {
+    var width = window.innerWidth * 3 / 4;
+    var height = window.innerHeight * 3.6 / 4;
+
+    var left = window.screenX + window.innerWidth / 4;
+    var top = window.screenY + window.innerHeight / 4;
+    
+    window.open("/signup/sign-in.html", "halfWindow", "width=" + width + ",height=" + height + ",left=" + left + ",top=" + top);
+  }
+
   const timerInterval = setInterval(updateTimer, 1000);
 // <!-- vishnu -->
 

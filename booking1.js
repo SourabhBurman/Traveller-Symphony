@@ -42,3 +42,12 @@ function getRandomInt(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const destinationName = urlParams.get('destination');
+    const destinationCountry = urlParams.get('country');
+
+    document.getElementById('inputEmail4').value = destinationName;
+});
+
