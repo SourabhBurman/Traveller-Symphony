@@ -22,27 +22,21 @@ app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
 
-app.post('/login', (req, res) => {
-    const { email, password } = req.body;
-    console.log('Login Attempt:', email, password);
-  
-    // Rest of the login logic...
-  });
+
   
 // Login route
 app.post('/login', (req, res) => {
     const { email, password } = req.body;
+    console.log(email, token); 
+    const user = users.find(u => u.email === email);
 
-  // Check if the user exists
-  const user = users.find(u => u.email === email && u.password === password);
-
-  if (!user) {
-    return res.status(401).json({ message: 'Invalid credentials' });
-  }
+    if (!user || user.password !== password) {
+        return res.status(401).json({ message: 'Invalid credentials' });
+    }
 
   // Generate JWT token
   const token = jwt.sign({ email }, secretKey);
-  console.log('Generated Token:', token); // Add this line
+  console.log('Generated Token:', token); 
 
   res.json({ token });
 });

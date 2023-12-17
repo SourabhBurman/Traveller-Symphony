@@ -1,41 +1,57 @@
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
-
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
-
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
-
-// client/signup.js
-
 document.addEventListener('DOMContentLoaded', () => {
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
     const signUpForm = document.querySelector('.sign-up-container form');
     const signInForm = document.querySelector('.sign-in-container form');
 
-    const handleFormSubmission = async (event, endpoint) => {
+    const handleLoginSubmission = async (event) => {
         event.preventDefault();
 
-        const name = document.querySelector('.sign-up-container input[placeholder="Name"]').value;
-        const emailSignUp = document.querySelector('.sign-up-container input[placeholder="Email"]').value;
-        const passwordSignUp = document.querySelector('.sign-up-container input[placeholder="Password"]').value;
-
-        const emailSignIn = document.querySelector('.sign-in-container input[placeholder="Email"]').value;
-        const passwordSignIn = document.querySelector('.sign-in-container input[placeholder="Password"]').value;
+        const email = document.querySelector('.sign-in-container input[placeholder="Email"]').value;
+        const password = document.querySelector('.sign-in-container input[placeholder="Password"]').value;
 
         const userData = {
-            name,
-            emailSignUp,
-            passwordSignUp,
-            emailSignIn,
-            passwordSignIn,
+            email,
+            password
         };
 
         try {
-            const response = await fetch(`http://localhost:3000/${endpoint}`, {
+            const response = await fetch('https://jwt-auth-ichz.onrender.com/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(userData),
+            });
+
+            if (response.ok) {
+                const { access_token } = await response.json();
+                sessionStorage.setItem('token', access_token);
+                console.log('Login successful. Token:', access_token);
+            } else {
+                const { message } = await response.json();
+                console.error('Login failed:', message);
+            }
+        } catch (error) {
+            console.error('Error during login:', error.message);
+        }
+    };
+
+    const handleSignupSubmission = async (event) => {
+        event.preventDefault();
+
+        const email = document.querySelector('.sign-up-container input[placeholder="Email"]').value;
+        const password = document.querySelector('.sign-up-container input[placeholder="Password"]').value;
+
+        const userData = {
+            email,
+            password,
+        };
+
+        try {
+            const response = await fetch('https://jwt-auth-ichz.onrender.com/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -44,19 +60,26 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (response.ok) {
-                const { token } = await response.json();
-                // Store the token securely (e.g., in localStorage or sessionStorage)
-                sessionStorage.setItem('token', token);
-                console.log('Token:', token);
+                const { access_token } = await response.json();
+                sessionStorage.setItem('token', access_token);
+                console.log('Signup successful. Token:', access_token);
             } else {
                 const { message } = await response.json();
-                console.error('Authentication failed:', message);
+                console.error('Signup failed:', message);
             }
         } catch (error) {
-            console.error('Error during authentication:', error.message);
+            console.error('Error during signup:', error.message);
         }
     };
 
-    signUpForm.addEventListener('submit', event => handleFormSubmission(event, 'signup'));
-    signInForm.addEventListener('submit', event => handleFormSubmission(event, 'login'));
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+
+    signInForm.addEventListener('submit', handleLoginSubmission);
+    signUpForm.addEventListener('submit', handleSignupSubmission);
 });
