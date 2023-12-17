@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     
         try {
-            const response = await fetch('https://jwt-auth-ichz.onrender.com/auth/login', {
+            const response = await fetch('http://localhost:3000/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const { access_token } = await response.json();
                 sessionStorage.setItem('token', access_token);
                 console.log('Login successful. Token:', access_token);
-                errorMessage.textContent = 'Login Successful';
+                errorMessage.textContent = 'Login Successful    ';
             } else {
                 const { message } = await response.json();
                 console.error('Login failed:', message);
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         try {
-            const response = await fetch('https://jwt-auth-ichz.onrender.com/auth/register', {
+            const response = await fetch('http://localhost:3000/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
