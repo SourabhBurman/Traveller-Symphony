@@ -60,3 +60,20 @@ function getRandomInt(min, max) {
     document.getElementById('inputEmail4').value = destinationName;
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    var bookNowButton = document.getElementById("booknowbutton");
+
+    bookNowButton.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        var token = sessionStorage.getItem("token"); 
+
+        if (token) {
+            // If a token is present, allow the form submission
+            document.forms[0].submit();
+        } else {
+            // If no token, redirect to the sign-in page
+            window.location.href = "/signup/sign-in.html";
+        }
+    });
+});
