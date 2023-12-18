@@ -72,13 +72,15 @@ https://code-symphony.netlify.app/
  Share the vision and mission of Travel Explorer.
 
 
-  <img width="600" alt="Screenshot (165)" src="https://github.com/SourabhBurman/code-symphony-4398/assets/146980127/04e634da-b987-4487-9109-a127d2cd11db">
+
   
  ### 7. **Booking Details Page**
 
  Enable users to view and manage their booking details.
  
  Include a summary of the booked trips and options for modification or cancellation.
+
+   <img width="600" alt="Screenshot (165)" src="https://github.com/SourabhBurman/code-symphony-4398/assets/146980127/04e634da-b987-4487-9109-a127d2cd11db">
 
 
 **BOOK NOW**
