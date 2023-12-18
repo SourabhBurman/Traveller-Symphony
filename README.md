@@ -67,13 +67,8 @@ https://code-symphony.netlify.app/
  
  ### 6. **About Us Page**
 
- Introduce the team members and their roles in the project.
- 
- Share the vision and mission of Travel Explorer.
+ Discover the world with us. Meet our team, explore our mission, and read inspiring travel stories.
 
-
-
-  
  ### 7. **Booking Details Page**
 
  Enable users to view and manage their booking details.
