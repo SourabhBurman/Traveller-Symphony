@@ -45,6 +45,7 @@ closeit.addEventListener('click', () => {
 
 // Fetch destinations on DOM content load
 document.addEventListener('DOMContentLoaded', () => {
+
     fetchDestinations()
         .then(destinations => {
             destinations.forEach(destination => {
@@ -55,6 +56,12 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => {
             console.error('Error fetching destinations:', error);
         });
+
+        const urlParams = new URLSearchParams(window.location.search);
+    const destinationName = urlParams.get('destination');
+    const destinationCountry = urlParams.get('country');
+
+    document.getElementById('inputEmail4').value = destinationName;
 });
 
 // Function to fetch destinations
@@ -138,3 +145,15 @@ function getRandomInt(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+
+// 
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const urlParams = new URLSearchParams(window.location.search);
+//     const destinationName = urlParams.get('destination');
+//     const destinationCountry = urlParams.get('country');
+
+//     document.getElementById('inputEmail4').value = destinationName;
+// });
