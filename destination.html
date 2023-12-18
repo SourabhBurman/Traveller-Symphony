@@ -30,13 +30,30 @@
 </div>
 
 
+<div id="myfilter" style="color:white;font-size:larger;display: flex; justify-content: center; gap:2%; margin-top:80px;">
+  <label for="myDropdown">Select</label>
+  <select id="myDropdown"  style="border-radius: 7px; border: none;">
+    <option value="country">--Select--</option>
+      <option value="country">country</option>
+      <option value="destination">destination</option>
+  </select>
+  <label for="myInput">Enter text:</label>
+  <input type="text" id="myInput" style="border-radius: 7px; border: none;">
+  <!-- <button id="ratingsort"  style="border-radius: 7px; border: none; padding:5px">High to Low Rating</button> -->
+  <button id="filternow"  style="background-color: rgba(255, 255, 255, 0.635);border-radius: 7px; border: none; padding:5px">Search</button>
+
+
+</div>
+
+
+
 <div id="destination-container"></div>
 
-<div class="home-pagination">
+<!-- <div class="home-pagination">
   <button id="prev-btn">Prev</button>
   <div id="pages-container"></div>
   <button id="next-btn">Next</button>
-</div>
+</div> -->
 
 <script src="destination.js"></script>
 <script src="script.js"></script>

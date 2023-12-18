@@ -52,13 +52,13 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const destinationName = urlParams.get('destination');
-    const destinationCountry = urlParams.get('country');
+//   document.addEventListener('DOMContentLoaded', function () {
+//     const urlParams = new URLSearchParams(window.location.search);
+//     const destinationName = urlParams.get('destination');
+//     const destinationCountry = urlParams.get('country');
 
-    document.getElementById('inputEmail4').value = destinationName;
-});
+//     document.getElementById('inputEmail4').value = destinationName;
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
     var bookNowButton = document.getElementById("booknowbutton");

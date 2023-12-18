@@ -1,8 +1,9 @@
 const destinationContainer = document.getElementById('destination-container');
 
-document.addEventListener('DOMContentLoaded', function () {
-    fetchDestinations()
+function display(cond,val) {
+  fetchDestinations(cond,val)
       .then(destinations => {
+        destinationContainer.innerHTML="";
         destinations.forEach(destination => {
           const destinationCard = createDestinationCard(destination);
           destinationContainer.appendChild(destinationCard);
@@ -11,12 +12,14 @@ document.addEventListener('DOMContentLoaded', function () {
       .catch(error => {
         console.error('Error fetching destinations:', error);
       });
-  });
+}
+
+  
 
   let travelDestinationsArray = [];
 
-  function fetchDestinations() {
-    return fetch('https://traveller-jt36.onrender.com/destinations')
+  function fetchDestinations(cond,val) {
+    return fetch(`https://traveller-jt36.onrender.com/destinations?${cond}=${val}`)
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -133,3 +136,15 @@ function displayRating(container, value) {
         container.appendChild(star);
     }
 }
+  let ratingsort = document.getElementById("ratingsort");
+let myDropdown = document.getElementById("myDropdown");
+let myInput = document.getElementById("myInput");
+
+// 
+let filternow = document.getElementById("filternow");
+filternow.addEventListener('click',(e)=> {
+  console.log(myDropdown.value,myInput.value);
+display(myDropdown.value,myInput.value);
+})
+
+display();
