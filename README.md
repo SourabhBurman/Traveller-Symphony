@@ -1,7 +1,7 @@
-# code-symphony-4398
+# Traveller-Symphony
 
 ## Description
-Welcome to Travel Code Symphony, your go-to destination for seamless travel experiences! This collaborative project is developed by a team of five passionate individuals during the Construct Week. We aim to provide users with a user-friendly platform to explore destinations, plan trips, and make bookings hassle-free.
+Welcome to Traveller-Symphony, your go-to destination for seamless travel experiences! This collaborative project is developed by a team of five passionate individuals during the Construct Week. We aim to provide users with a user-friendly platform to explore destinations, plan trips, and make bookings hassle-free.
 https://code-symphony.netlify.app/
 
 ## Tech Stacks Used
